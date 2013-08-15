@@ -9,7 +9,7 @@
 ####Configuring AdColony####
 [`+ configure( activity:Activity, client_options:String, app_id:String, zone_ids:String...)`](API-Details#configure)
 ####Other AdColony Utilities####
-[`+ setDeviceID( id:String )'](API-Details#setdeviceid)
+[`+ setDeviceID( id:String )`](API-Details#setdeviceid)
 
 ###Class Methods###
 
