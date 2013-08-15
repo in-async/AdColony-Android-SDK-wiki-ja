@@ -21,7 +21,7 @@
 
 ###Class Methods###
 
-####configure####
+####configure( Activity activity, String client_options, String app_id, String... zone_ids)####
 Configures AdColony specifically for your app; required for usage of the rest of the API.
 ```java
 static public void configure( Activity activity,String client_options, String app_id, String... zone_ids )
@@ -40,7 +40,7 @@ static public void configure( Activity activity,String client_options, String ap
 This method should be the first AdColony related call in your code, with the exception of [setDeviceID](API-Details#setdeviceid). This method returns immediately; any long-running work such as network connections are performed in the background. AdColony does not begin preparing ads for display or performing reporting until after it is configured by your app.
 
 ---
-####setDeviceID####
+####setDeviceID( String id )####
 Specifies the string identifier to use throughout the app instead of the automatically generated ID.
 ```java
 static public void setDeviceID( String id )
@@ -53,7 +53,7 @@ static public void setDeviceID( String id )
 Calls to [getDeviceID](API-Details#getdeviceid) will return this new ID as well. Must be called before AdColony.configure(). **Note: setting your own device ID is completely optional.**
 
 ---
-####setCustomID####
+####setCustomID ( String id )####
 Sets a custom ID String that is passed through to server-­side V4VC callbacks
 ```java
 static public void setCustomID( String id )
@@ -84,7 +84,7 @@ static public String getCustomID()
 Returns an empty String if no custom ID is set.
 
 ---
-####addV4VCListener####
+####addV4VCListener( AdColonyV4VCListener listener )####
 Registers a listener to be notified about V4VC results.
 ```java
 static public void addV4VCListener()
@@ -131,12 +131,22 @@ static public void resume(Activity activity)
 **Note:**
 This section (minus the constructors) applies to both AdColonyVideoAd and AdColonyV4VCAd objects. Click [here](API-Details#adcolonyv4vcad-class-reference) for information specific to AdColonyV4VCAd objects.
 ####Creating an AdColonyVideoAd Object####
-[`+ AdColonyVideoAd()`](API-Details#adcolonyvideoad)
+[`+ AdColonyVideoAd()`](API-Details#adcolonyvideoad)<br>
+[`+ AdColonyVideoAd( zone_id:String )`](API-Details#adcolonyvideoadstring)<br>
 
 ###Class Methods###
 
 ####AdColonyVideoAd####
-Creates a video ad that will play from the first available zone..
+Creates a video ad that will play from the first available zone.
+```java
+public AdColonyVideoAd()
+```
+**Discussion**  
+You should create new AdColonyVideoAd objects every time you wish to play a video to avoid using outdated data internally.
+
+---
+####AdColonyVideoAd(String zone_id)####
+Creates a video ad that will play from specified zone.
 ```java
 public AdColonyVideoAd()
 ```
