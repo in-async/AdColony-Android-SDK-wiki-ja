@@ -35,7 +35,7 @@ This method should be the first AdColony related call in your code, with the exc
 ####setDeviceID####
 Specifies the string identifier to use throughout the app instead of the automatically generated ID.
 ```java
-+ static public void setCustomID( String id )
++ static public void setDeviceID( String id )
 ```
 **Parameters**   
 * *id*  
