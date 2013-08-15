@@ -262,3 +262,31 @@ public String getRewardName()
 The value that this method returns may not be valid if a successful ad config has not finished downloading (triggered by [configure](API-Details#configure-activity-activity-string-client_options-string-app_id-string-zone_ids-)).
 
 ---
+####getRewardAmount()####
+Returns the amount of virtual currency rewarded as set on the dashboard.
+```java
+public int getRewardAmount()
+```
+**Discussion**  
+The value that this method returns may not be valid if a successful ad config has not finished downloading (triggered by [configure](API-Details#configure-activity-activity-string-client_options-string-app_id-string-zone_ids-)).
+
+---
+####getViewsPerReward()####
+Returns the number of video views needed to receive a reward (1 by default).
+```java
+public int getViewsPerReward()
+```
+**Discussion**  
+The value that this method returns may not be valid if a successful ad config has not finished downloading (triggered by [configure](API-Details#configure-activity-activity-string-client_options-string-app_id-string-zone_ids-)).
+
+---
+####getRemainingViewsUntilReward()####
+Returns the number of video views needed until the next reward will be given (1 by default).
+```java
+public int getRemainingViewsUntilReward()
+```
+**Discussion**  
+The value that this method returns may not be valid if a successful ad config has not finished downloading (triggered by [configure](API-Details#configure-activity-activity-string-client_options-string-app_id-string-zone_ids-)).
+
+
+
