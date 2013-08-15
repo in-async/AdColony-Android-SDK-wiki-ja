@@ -53,7 +53,7 @@ static public void setDeviceID( String id )
 Calls to [getDeviceID](API-Details#getdeviceid) will return this new ID as well. Must be called before AdColony.configure(). **Note: setting your own device ID is completely optional.**
 
 ---
-####setCustomID ( String id )####
+####setCustomID( String id )####
 Sets a custom ID String that is passed through to server-­side V4VC callbacks
 ```java
 static public void setCustomID( String id )
