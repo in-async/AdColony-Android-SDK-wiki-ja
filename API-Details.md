@@ -132,7 +132,7 @@ static public void resume(Activity activity)
 This section (minus the constructors) applies to both AdColonyVideoAd and AdColonyV4VCAd objects. Click [here](API-Details#adcolonyv4vcad-class-reference) for information specific to AdColonyV4VCAd objects.
 ####Creating an AdColonyVideoAd Object####
 [`+ AdColonyVideoAd()`](API-Details#adcolonyvideoad)<br>
-[`+ AdColonyVideoAd( zone_id:String )`](API-Details#adcolonyvideoadstring)<br>
+[`+ AdColonyVideoAd( zone_id:String )`](API-Details#adcolonyvideoad(-string)<br>
 
 ###Class Methods###
 
