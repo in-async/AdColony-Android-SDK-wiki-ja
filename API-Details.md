@@ -135,6 +135,7 @@ This section (minus the constructors) applies to both AdColonyVideoAd and AdColo
 [`+ AdColonyVideoAd( zone_id:String )`](API-Details#adcolonyvideoad-string-zone_id-)<br>
 [`+ withListener( listener:AdColonyAdListener ) : AdColonyVideoAd`](API-Details#withlistener-adcolonyadlistener-listener-)<br>
 [`+ isReady() : boolean`](API-Details#isready)<br>
+[`+ show()`](API-Details#adcolonyvideoadclassreference#show)
 
 ###Class Methods###
 
@@ -169,6 +170,18 @@ Returns true if a video advertisement is ready to be played, or false otherwise.
 public boolean isReady()
 ```
 **Discussion**  
-If isReady() returns false, more information about why is logged out.
+If isReady returns false, more information about why is logged out.
+
+---
+####show()####
+Shows a video advertisement if possible.
+```java
+public void show()
+```
+**Discussion**  
+No ad will be shown if [isReady](API-Details#isready) returns false. You can chain together a call to show with the [withListener](API-Details#withlistener-adcolonyadlistener-listener-) like so:<br>
+```java
+AdColonyVideoAd ad = new AdColonyVideoAd().withListener( listener ).show();
+```
 
 ---
