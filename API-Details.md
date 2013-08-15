@@ -15,6 +15,10 @@
 [`+ getCustomID( id:String ) : String`](API-Details#getcustomid)<br>
 [`+ addV4VCListener( listener:AdColonyV4VCListener )`](API-Details#addv4vclistener)<br>
 [`+ removeV4VCListener( listener:AdColonyV4VCListener )`](API-Details#removev4vclistener)<br>
+[`+ isTablet() : boolean`](API-Details#istablet)<br>
+[`+ pause()`](API-Details#pause)<br>
+[`+ resume( activity:Activity )`](API-Details#resume)
+
 ###Class Methods###
 
 ####configure####
@@ -97,4 +101,27 @@ static public void removeV4VCListener()
 **Discussion**  
 Further discussion on how to implement a V4VCListener can be found [here](API-Details#adcolonyv4vclistener-interface-reference)
 
+---
+####isTablet####
+Returns "true" when run on Android tablets.
+```java
+static public boolean isTablet()
+```
+
+---
+####pause####
+Call this method from your Activity’s onPause() method.
+```java
+static public void pause()
+```
+
+---
+####resume####
+Call this method from your Activity’s onPause() method.
+```java
+static public void resume(Activity activity)
+```
+**Parameters**   
+* *activity*  
+  * Your Activity context.
 ---
