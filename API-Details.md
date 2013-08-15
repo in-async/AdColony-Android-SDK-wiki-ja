@@ -11,8 +11,8 @@
 ####Other AdColony Utilities####
 [`+ setDeviceID( id:String )`](API-Details#setdeviceid-string-id-)<br>
 [`+ setCustomID( id:String )`](API-Details#setcustomid-string-id-)<br>
-[`+ getDeviceID( id:String ) : String`](API-Details#getdeviceid)<br>
-[`+ getCustomID( id:String ) : String`](API-Details#getcustomid)<br>
+[`+ getDeviceID() : String`](API-Details#getdeviceid)<br>
+[`+ getCustomID() : String`](API-Details#getcustomid)<br>
 [`+ addV4VCListener( listener:AdColonyV4VCListener )`](API-Details#addv4vclistener-adcolonyv4vclistener-listener-)<br>
 [`+ removeV4VCListener( listener:AdColonyV4VCListener )`](API-Details#removev4vclistener-adcolonyv4vclistener-listener-)<br>
 [`+ isTablet() : boolean`](API-Details#istablet)<br>
