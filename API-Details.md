@@ -291,11 +291,59 @@ The value that this method returns may not be valid if a successful ad config ha
 
 
 ###AdColonyAdListener Interface Reference###
-####Inherited Methods####
+####Inherited####
 [`+ onAdColonyAdStarted( ad:AdColonyAd )`](API-Details#onadcolonyadstarted-adcolonyad-ad-)<br>
 [`+ onAdColonyAdAttemptFinished( ad:AdColonyAd )`](API-Details#onadcolonyadattemptfinished-adcolonyad-ad-)<br>
-####The following methods can be invoked on the returned AdColonyAd object:####
+####Invoke on Returned Ad Object####
 [`+ shown() : boolean`](API-Details#shown)<br>
-[`+ cancelled() : boolean`](API-Details#cancelled)<br>
+[`+ canceled() : boolean`](API-Details#canceled)<br>
 [`+ noFill() : boolean`](API-Details#nofill)<br>
 [`+ skipped() : boolean`](API-Details#skipped)
+
+###Methods###
+####onAdColonyAdStarted( AdColonyAd ad )####
+This method, when implemented in your listener, is called when an ad starts playing.
+```java
+public void onAdColonyAdStarted( AdColonyAd ad )
+```
+**Discussion**  
+This method is not called if the video ad fails to play.
+
+---
+####onAdColonyAdAttemptFinished( AdColonyAd ad )####
+This method, when implemented in your listener, is called when an ad attempt finishes.
+```java
+public void onAdColonyAdAttemptFinished( AdColonyAd ad )
+```
+**Discussion**  
+This method **is** called if the video ad fails to play.
+
+---
+####shown()####
+When invoked on the AdColonyAd object returned from [onAdColonyAdAttemptFinished](API-Details#onadcolonyattemptfinished-adcolonyad-ad-), this method will return true if the ad was successfully shown.
+```java
+public boolean shown()
+```
+
+---
+####canceled()####
+When invoked on the AdColonyAd object returned from [onAdColonyAdAttemptFinished](API-Details#onadcolonyattemptfinished-adcolonyad-ad-), this method will return true if the ad was canceled.
+```java
+public boolean canceled()
+```
+**Discussion**  
+An example of when this method would return true would be if a user skips an ad (skippable ads must be enabled for this to occur).
+
+---
+####noFill()####
+When invoked on the AdColonyAd object returned from [onAdColonyAdAttemptFinished](API-Details#onadcolonyattemptfinished-adcolonyad-ad-), this method will return true if there was no no ad played due to no ad fill.
+```java
+public boolean noFill()
+```
+
+---
+####skipped()####
+When invoked on the AdColonyAd object returned from [onAdColonyAdAttemptFinished](API-Details#onadcolonyattemptfinished-adcolonyad-ad-), this method will return true if the ad was skipped due to an interval play setting (set on the dashboard).
+```java
+public boolean skipped()
+```
