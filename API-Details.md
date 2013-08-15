@@ -124,4 +124,7 @@ static public void resume(Activity activity)
 **Parameters**   
 * *activity*  
   * Your Activity context.
+
+**Discussion**
+You must pass in your Activity reference (`AdColony.resume(this);`).
 ---
