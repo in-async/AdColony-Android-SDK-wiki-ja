@@ -291,10 +291,10 @@ The value that this method returns may not be valid if a successful ad config ha
 
 
 ###AdColonyAdListener Interface Reference###
-####Inherited####
+####Implement the Following####
 [`+ onAdColonyAdStarted( ad:AdColonyAd )`](API-Details#onadcolonyadstarted-adcolonyad-ad-)<br>
 [`+ onAdColonyAdAttemptFinished( ad:AdColonyAd )`](API-Details#onadcolonyadattemptfinished-adcolonyad-ad-)<br>
-####Invoke on Returned Ad Object####
+####Invoke on Returned AdColonyAd Object####
 [`+ shown() : boolean`](API-Details#shown)<br>
 [`+ canceled() : boolean`](API-Details#canceled)<br>
 [`+ noFill() : boolean`](API-Details#nofill)<br>
@@ -347,3 +347,14 @@ When invoked on the AdColonyAd object returned from [onAdColonyAdAttemptFinished
 ```java
 public boolean skipped()
 ```
+
+
+
+###AdColonyV4VCListener Interface Reference###
+####Implement the Following####
+[`+ onAdColonyV4VCReward( reward:AdColonyV4VCReward )`](API-Details#onadcolonyv4vcreward-adcolonyv4vcreward-reward-)<br>
+####Invoke on Returned AdColonyV4VCReward Object####
+[`+ success() : boolean`](API-Details#success)<br>
+[`+ name() : String`](API-Details#name)<br>
+[`+ amount() : int`](API-Details#amount)<br>
+###Methods###
