@@ -7,7 +7,7 @@ onAdColonyVideoStarted() ­> onAdColonyAdStarted(ad:AdColonyAd) <br>
 onAdColonyVideoFinished() ­> onAdColonyAdAttemptFinished(ad:AdColonyAd) <br>
 4. When onAdColonyAdAttemptFinished() is called, the AdColonyAd parameter may be 
 queried for the status using one of the following methods: <br>
-shown():boolean // returns true if an ad was shown as expected notShown():boolean // true if the ad was not shown for any reason <br> 
+shown():boolean // returns true if an ad was shown as expected <br> 
 canceled():boolean // true if a V4VC ad was canceled before being shown <br>
 noFill():boolean // true if no ad fill was available <br>
 skipped():boolean // true if a skippable video ad was skipped during play <br>
