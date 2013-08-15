@@ -56,6 +56,6 @@ static public void setCustomID( String id )
   * The String identifier to use.  
 
 **Discussion**  
-The custom ID String is passed through as "“&custom_id=...” and can be used at your discretion.
+The custom ID String is passed through as “&custom_id=...” and can be used at your discretion.
 
 ---
