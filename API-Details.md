@@ -13,6 +13,8 @@
 [`+ setCustomID( id:String )`](API-Details#setcustomid)<br>
 [`+ getDeviceID( id:String ) : String`](API-Details#getdeviceid)<br>
 [`+ getCustomID( id:String ) : String`](API-Details#getcustomid)<br>
+[`+ addV4VCListener( listener:AdColonyV4VCListener )`](API-Details#addv4vclistener)<br>
+[`+ removeV4VCListener( listener:AdColonyV4VCListener )`](API-Details#removev4vclistener)<br>
 ###Class Methods###
 
 ####configure####
@@ -76,5 +78,23 @@ static public String getCustomID()
 ```
 **Discussion**  
 Returns an empty String if no custom ID is set.
+
+---
+####addV4VCListener####
+Registers a listener to be notified about V4VC results.
+```java
+static public void addV4VCListener()
+```
+**Discussion**  
+Further discussion on how to implement a V4VCListener can be found [here](API-Details#adcolonyv4vclistener-interface-reference)
+
+---
+####removeV4VCListener####
+AdColony stops sending V4VC results to the specified listener.
+```java
+static public void removeV4VCListener()
+```
+**Discussion**  
+Further discussion on how to implement a V4VCListener can be found [here](API-Details#adcolonyv4vclistener-interface-reference)
 
 ---
