@@ -291,13 +291,11 @@ The value that this method returns may not be valid if a successful ad config ha
 
 
 ###AdColonyAdListener Interface Reference###
-To successfully implement AdColonyAdListener your listener must implement the following methods:<br>
+####Inherited Methods####
 [`+ onAdColonyAdStarted( ad:AdColonyAd )`](API-Details#onadcolonyadstarted-adcolonyad-ad-)<br>
 [`+ onAdColonyAdAttemptFinished( ad:AdColonyAd )`](API-Details#onadcolonyadattemptfinished-adcolonyad-ad-)<br>
-The following methods can be invoked on the AdColonyAd object (usually done in the [onAdColonyAttempFinished](API-Details#onadcolonyadattemptfinished-adcolonyad-ad-) method):<br>
+####The following methods can be invoked on the returned AdColonyAd object:####
 [`+ shown() : boolean`](API-Details#shown)<br>
 [`+ cancelled() : boolean`](API-Details#cancelled)<br>
 [`+ noFill() : boolean`](API-Details#nofill)<br>
 [`+ skipped() : boolean`](API-Details#skipped)
-
-###Inherited Methods###
