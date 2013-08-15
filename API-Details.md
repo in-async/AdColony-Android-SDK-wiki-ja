@@ -7,7 +7,7 @@
 ==     
 ###AdColony Class Reference###
 ####Configuring AdColony####
-[`+ configure( activity:Activity, client_options:String, app_id:String, zone_ids:String...)`](API-Details#configure-activity-activity,-string-client_options,-string-app_id,-string...-zone_ids-)
+[`+ configure( activity:Activity, client_options:String, app_id:String, zone_ids:String...)`](API-Details#configure-activity-activity-string-client_options-string-app_id-string-zone_ids-)
 ####Other AdColony Utilities####
 [`+ setDeviceID( id:String )`](API-Details#setdeviceid-string-id-)<br>
 [`+ setCustomID( id:String )`](API-Details#setcustomid-string-id-)<br>
