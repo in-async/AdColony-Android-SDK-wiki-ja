@@ -229,3 +229,27 @@ public AdColonyV4VCAd( String zone_id )
 You should create new AdColonyV4VCAd objects every time you wish to play a video to avoid using outdated data internally.
 
 ---
+####withConfirmationDialog()####
+Enables a pre-­popup dialog to be shown prior to a V4VC video advertisement. Returns the invoked upon AdColonyV4VC object.
+```java
+public void withConfirmationDialog()
+```
+**Discussion**  
+You can chain this method together with [show](API-Details#show) as follows:<br>
+```java
+AdColonyV4VCAd ad = new AdColonyV4VCAd().withConfirmationDialog().show();
+```
+
+---
+####withResultsDialog()####
+Enables a post-­popup dialog to be shown after a V4VC video advertisement.
+```java
+public void withResultsDialog()
+```
+**Discussion**  
+You can chain this method together with [show](API-Details#show) as follows:<br>
+```java
+AdColonyV4VCAd ad = new AdColonyV4VCAd().withResultsDialog().show();
+```
+
+---
