@@ -135,7 +135,8 @@ This section (minus the constructors) applies to both AdColonyVideoAd and AdColo
 [`+ AdColonyVideoAd( zone_id:String )`](API-Details#adcolonyvideoad-string-zone_id-)<br>
 [`+ withListener( listener:AdColonyAdListener ) : AdColonyVideoAd`](API-Details#withlistener-adcolonyadlistener-listener-)<br>
 [`+ isReady() : boolean`](API-Details#isready)<br>
-[`+ show()`](API-Details#adcolonyvideoadclassreference#show)
+[`+ show()`](API-Details#show)<br>
+[`+ getAvailableViews() : int`](API-Details#getavailableviews)
 
 ###Class Methods###
 
@@ -182,6 +183,13 @@ public void show()
 No ad will be shown if [isReady](API-Details#isready) returns false. You can chain together a call to show with the [withListener](API-Details#withlistener-adcolonyadlistener-listener-) like so:<br>
 ```java
 AdColonyVideoAd ad = new AdColonyVideoAd().withListener( listener ).show();
+```
+
+---
+####getAvailableViews()####
+Returns the remaining number of plays available today.
+```java
+public int getAvailableViews()
 ```
 
 ---
