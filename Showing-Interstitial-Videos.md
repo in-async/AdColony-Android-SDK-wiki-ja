@@ -1,0 +1,1 @@
+AdColony interstitial ads are a video ad immediately followed by an end-card (described in more detail in the AdColony Product Overview).
