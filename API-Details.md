@@ -358,3 +358,31 @@ public boolean skipped()
 [`+ name() : String`](API-Details#name)<br>
 [`+ amount() : int`](API-Details#amount)<br>
 ###Methods###
+####onAdColonyV4VCReward( AdColonyV4VCReward reward )####
+This method, when implemented, is called when a V4VC reward is attempted given you have added it to the list of AdColonyV4VCListeners ([see here](API-Details#addAdColonyV4VCListener-adcolonyv4vclistener-listener-)).
+```java
+public void onAdColonyV4VCReward( AdColonyV4VCReward reward)
+```
+
+---
+####success()####
+When invoked on the returned [AdColonyV4VCReward](API-Details#onadcolonyv4vcreward-adcolonyv4vcreward-reward-) object, this method will return true if the V4VC reward event has occurred successfully. 
+```java
+public boolean success()
+```
+**Discussion**
+In the event of a various network problems, a currency transaction will not be instantaneous, which can result in this callback being executed by AdColony at any point during your application.
+
+---
+####name()####
+When invoked on the returned [AdColonyV4VCReward](API-Details#onadcolonyv4vcreward-adcolonyv4vcreward-reward-) object, this method will return the name of the reward as set in the dashboard. 
+```java
+public String name()
+```
+
+---
+####amount()####
+When invoked on the returned [AdColonyV4VCReward](API-Details#onadcolonyv4vcreward-adcolonyv4vcreward-reward-) object, this method will return the amount of the reward awarded as set in the dashboard. 
+```java
+public int amount()
+```
