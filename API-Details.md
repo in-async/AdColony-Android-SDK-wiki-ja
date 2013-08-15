@@ -92,6 +92,7 @@ static public void addV4VCListener( AdColonyV4VCListener listener )
 **Parameters**   
 * *listener*  
   * The AdColonyV4VCListener to be added.
+
 **Discussion**  
 Further discussion on how to implement a V4VCListener can be found [here](API-Details#adcolonyv4vclistener-interface-reference)
 
@@ -104,6 +105,7 @@ static public void removeV4VCListener( AdColonyV4VCListener listener )
 **Parameters**   
 * *listener*  
   * The AdColonyV4VCListener to remove.
+
 **Discussion**  
 Further discussion on how to implement a V4VCListener can be found [here](API-Details#adcolonyv4vclistener-interface-reference)
 
@@ -164,6 +166,7 @@ public AdColonyVideoAd( String zone_id )
 **Parameters**   
 * *zone_id*  
   * The zone you want the AdColonyVideoAd to play videos from.
+
 **Discussion**  
 You should create new AdColonyVideoAd objects every time you wish to play a video to avoid using outdated data internally.
 
@@ -240,6 +243,7 @@ public AdColonyV4VCAd( String zone_id )
 **Parameters**   
 * *zone_id*  
   * The zone you want the AdColonyV4VCAd to play videos from.
+
 **Discussion**  
 You should create new AdColonyV4VCAd objects every time you wish to play a video to avoid using outdated data internally.
 
@@ -324,6 +328,7 @@ public void onAdColonyAdStarted( AdColonyAd ad )
 **Parameters**   
 * *ad*  
   * The ad that started playing.
+
 **Discussion**  
 This method is not called if the video ad fails to play.
 
@@ -336,6 +341,7 @@ public void onAdColonyAdAttemptFinished( AdColonyAd ad )
 **Parameters**   
 * *ad*  
   * The ad that has finished playing (or finished attempting to play).
+
 **Discussion**  
 This method **is** called if the video ad fails to play.
 
