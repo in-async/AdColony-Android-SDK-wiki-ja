@@ -10,6 +10,7 @@
 [`+ configure( activity:Activity, client_options:String, app_id:String, zone_ids:String...)`](API-Details#configure)
 ####Other AdColony Utilities####
 [`+ setDeviceID( id:String )`](API-Details#setdeviceid)
+[`+ setCustomID( id:String )`](API-Details#setcustomid)
 
 ###Class Methods###
 
@@ -43,5 +44,18 @@ static public void setDeviceID( String id )
 
 **Discussion**  
 Calls to [getDeviceID](API-Details#getdeviceid) will return this new ID as well. Must be called before AdColony.configure(). **Note: setting your own device ID is completely optional.**
+
+---
+####setCustomID####
+Sets a custom ID String that is passed through to server-­side V4VC callbacks
+```java
+static public void setCustomID( String id )
+```
+**Parameters**   
+* *id*  
+  * The String identifier to use.  
+
+**Discussion**  
+The custom ID String is passed through as "“&custom_id=...” and can be used at your discretion.
 
 ---
