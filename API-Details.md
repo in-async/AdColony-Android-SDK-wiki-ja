@@ -7,7 +7,7 @@
 ==     
 ###AdColony Class Reference###
 ####Configuring AdColony####
-[`+ configure( activity:Activity, client_options:String, app_id:String, zone_ids:String...)`](API-Details#configure)
+[`+ configure( activity:Activity, client_options:String, app_id:String, zone_ids:String...)`](API-Details#configure-activity-activity,-string-client_options,-string-app_id,-string...-zone_ids-)
 ####Other AdColony Utilities####
 [`+ setDeviceID( id:String )`](API-Details#setdeviceid-string-id-)<br>
 [`+ setCustomID( id:String )`](API-Details#setcustomid-string-id-)<br>
@@ -251,5 +251,14 @@ You can chain this method together with [show](API-Details#show) as follows:<br>
 ```java
 AdColonyV4VCAd ad = new AdColonyV4VCAd().withResultsDialog().show();
 ```
+
+---
+####getRewardName()####
+Returns the name of your virtual currency as set on the dashboard.
+```java
+public String getRewardName()
+```
+**Discussion**  
+The value that this method returns may not be valid if a successful ad config has not finished downloading (triggered by [configure](.
 
 ---
