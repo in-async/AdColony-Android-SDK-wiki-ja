@@ -10,8 +10,9 @@
 [`+ configure( activity:Activity, client_options:String, app_id:String, zone_ids:String...)`](API-Details#configure)
 ####Other AdColony Utilities####
 [`+ setDeviceID( id:String )`](API-Details#setdeviceid)<br>
-[`+ setCustomID( id:String )`](API-Details#setcustomid)
-
+[`+ setCustomID( id:String )`](API-Details#setcustomid)<br>
+[`+ getDeviceID( id:String ) : String`](API-Details#getdeviceid)<br>
+[`+ getCustomID( id:String ) : String`](API-Details#getcustomid)<br>
 ###Class Methods###
 
 ####configure####
@@ -57,5 +58,23 @@ static public void setCustomID( String id )
 
 **Discussion**  
 The custom ID String is passed through as “&custom_id=...” and can be used at your discretion.
+
+---
+####getDeviceID####
+Returns a globally unique identifier tied to the current installation of an app.
+```java
+static public String getDeviceID()
+```
+**Discussion**  
+While an appropriate ID is generated automatically when the app is installed, you can also use [setDeviceID](API-Details#setdeviceid) to set an ID of your choosing. In either case, make sure that the device ID you use to contact the virtual currency server with is the same device ID that AdColony is using.
+
+---
+####getCustomID####
+Returns the String previously passed into [setCustomID](API-Details#setcustomid)
+```java
+static public String getCustomID()
+```
+**Discussion**  
+Returns an empty String if no custom ID is set.
 
 ---
