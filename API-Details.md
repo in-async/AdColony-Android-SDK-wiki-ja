@@ -139,7 +139,7 @@ This section (minus the constructors) applies to both AdColonyVideoAd and AdColo
 [`+ show()`](API-Details#show)<br>
 [`+ getAvailableViews() : int`](API-Details#getavailableviews)
 
-###Class Methods###
+###Instance Methods###
 
 ####AdColonyVideoAd()####
 Creates a video ad that will play from the first available zone.
@@ -209,7 +209,7 @@ AdColonyV4VCAd objects can be interacted with just as [AdColonyVideoAd objects](
 [`+ getViewsPerReward() : int`](API-Details#getviewsperreward)<br>
 [`+ getRemainingViewsUntilReward() : int`](API-Details#getremainingviewsuntilreward)
 
-###Class Methods###
+###Instance Methods###
 
 ####AdColonyV4VCAd()####
 Creates a V4VC ad that will play from the first available zone.
@@ -290,3 +290,14 @@ The value that this method returns may not be valid if a successful ad config ha
 
 
 
+###AdColonyAdListener Interface Reference###
+To successfully implement AdColonyAdListener your listener must implement the following methods:<br>
+[`+ onAdColonyAdStarted( ad:AdColonyAd )`](API-Details#onadcolonyadstarted-adcolonyad-ad-)<br>
+[`+ onAdColonyAdAttemptFinished( ad:AdColonyAd )`](API-Details#onadcolonyadattemptfinished-adcolonyad-ad-)<br>
+The following methods can be invoked on the AdColonyAd object (usually done in the [onAdColonyAttempFinished](API-Details#onadcolonyadattemptfinished-adcolonyad-ad-) method):<br>
+[`+ shown() : boolean`](API-Details#shown)<br>
+[`+ cancelled() : boolean`](API-Details#cancelled)<br>
+[`+ noFill() : boolean`](API-Details#nofill)<br>
+[`+ skipped() : boolean`](API-Details#skipped)
+
+###Inherited Methods###
