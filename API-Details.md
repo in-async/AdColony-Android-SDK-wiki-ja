@@ -359,7 +359,7 @@ public boolean skipped()
 [`amount() : int`](API-Details#amount)<br>
 ###Methods###
 ####onAdColonyV4VCReward( AdColonyV4VCReward reward )####
-This method, when implemented, is called when a V4VC reward is attempted given you have added it to the list of AdColonyV4VCListeners ([see here](API-Details#addAdColonyV4VCListener-adcolonyv4vclistener-listener-)).
+This method, when implemented, is called when a V4VC reward is attempted given you have added it to the list of AdColonyV4VCListeners ([see here](API-Details#addv4vclistener-adcolonyv4vclistener-listener-)).
 ```java
 public void onAdColonyV4VCReward( AdColonyV4VCReward reward)
 ```
