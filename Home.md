@@ -2,8 +2,7 @@ AdColony delivers high-definition Instant-Play video ads that can be displayed a
 
 ===
 ###Notes###
-
-Our current version of the AdColony Android SDK is 2.0.2.
+# Our current version of the AdColony Android SDK is 2.0.2.
 ===
 ###Contents###
 * [[AdColony Product Overview]]
