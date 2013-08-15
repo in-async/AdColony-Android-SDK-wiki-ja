@@ -132,3 +132,15 @@ static public void resume(Activity activity)
 This section (minus the constructors) applies to both AdColonyVideoAd and AdColonyV4VCAd objects. Click [here](API-Details#adcolonyv4vcad-class-reference) for information specific to AdColonyV4VCAd objects.
 ####Creating an AdColonyVideoAd Object####
 [`+ AdColonyVideoAd()`](API-Details#adcolonyvideoad)
+
+###Class Methods###
+
+####AdColonyVideoAd####
+Creates a video ad that will play from the first available zone..
+```java
+public AdColonyVideoAd()
+```
+**Discussion**  
+You should create new AdColonyVideoAd objects every time you wish to play a video to avoid using outdated data internally.
+
+---
