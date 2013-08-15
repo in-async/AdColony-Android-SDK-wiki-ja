@@ -133,6 +133,7 @@ This section (minus the constructors) applies to both AdColonyVideoAd and AdColo
 ####Creating an AdColonyVideoAd Object####
 [`+ AdColonyVideoAd()`](API-Details#adcolonyvideoad)<br>
 [`+ AdColonyVideoAd( zone_id:String )`](API-Details#adcolonyvideoad-string-zone_id-)<br>
+[`+ withListener( listener:AdColonyAdListener ) : AdColonyVideoAd`](API-Details#withlistener-adcolonyadlistener-listener-)<br>
 
 ###Class Methods###
 
@@ -152,5 +153,12 @@ public AdColonyVideoAd( String zone_id )
 ```
 **Discussion**  
 You should create new AdColonyVideoAd objects every time you wish to play a video to avoid using outdated data internally.
+
+---
+####withListener( AdColonyAdListener listener )####
+Registers a listener to be notified about when a video advertisement finishes. Returns the invoked AdColonyVideoAd object. 
+```java
+public AdColonyVideoAd( String zone_id )
+```
 
 ---
