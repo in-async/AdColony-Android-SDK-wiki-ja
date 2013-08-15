@@ -8,6 +8,8 @@
 ###AdColony Class Reference###
 ####Configuring AdColony####
 [`+ configure( activity:Activity, client_options:String, app_id:String, zone_ids:String...)`](API-Details#configure)
+####Other AdColony Utilities####
+[`+ setDeviceID( id:String )'](API-Details#setdeviceid)
 
 ###Class Methods###
 
@@ -27,6 +29,19 @@ static public void configure( Activity activity,String client_options, String ap
   * Any number ( >= 1 ) of AdColony zone ID strings (an array of Strings is also acceptable). AdColony zone IDs can be created and retrieved at the [Control Panel](http://clients.adcolony.com). If null or inaccurate, your app will be unable to play ads and AdColony will only provide limited reporting and install tracking functionality.  
 
 **Discussion**  
-This method should be the first AdColony related call in your code, with the exception of [setDeviceID](API-Details#setdeviceid).This method returns immediately; any long-running work such as network connections are performed in the background. AdColony does not begin preparing ads for display or performing reporting until after it is configured by your app.
+This method should be the first AdColony related call in your code, with the exception of [setDeviceID](API-Details#setdeviceid). This method returns immediately; any long-running work such as network connections are performed in the background. AdColony does not begin preparing ads for display or performing reporting until after it is configured by your app.
+
+---
+####setDeviceID####
+Specifies the string identifier to use throughout the app instead of the automatically generated ID.
+```java
++ static public void setCustomID( String id )
+```
+**Parameters**   
+* *id*  
+  * The String identifier to use.  
+
+**Discussion**  
+Calls to [getDeviceID](API-Details#getdeviceid) will return this new ID as well. Must be called before AdColony.configure(). Note: setting your own device ID is completely optional.
 
 ---
