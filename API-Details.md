@@ -87,8 +87,11 @@ Returns an empty String if no custom ID is set.
 ####addV4VCListener( AdColonyV4VCListener listener )####
 Registers a listener to be notified about V4VC results.
 ```java
-static public void addV4VCListener()
+static public void addV4VCListener( AdColonyV4VCListener listener )
 ```
+**Parameters**   
+* *listener*  
+  * The AdColonyV4VCListener to be added.
 **Discussion**  
 Further discussion on how to implement a V4VCListener can be found [here](API-Details#adcolonyv4vclistener-interface-reference)
 
@@ -96,8 +99,11 @@ Further discussion on how to implement a V4VCListener can be found [here](API-De
 ####removeV4VCListener( AdColonyV4VCListener listener )####
 AdColony stops sending V4VC results to the specified listener.
 ```java
-static public void removeV4VCListener()
+static public void removeV4VCListener( AdColonyV4VCListener listener )
 ```
+**Parameters**   
+* *listener*  
+  * The AdColonyV4VCListener to remove.
 **Discussion**  
 Further discussion on how to implement a V4VCListener can be found [here](API-Details#adcolonyv4vclistener-interface-reference)
 
@@ -155,6 +161,9 @@ Creates a video ad that will play from specified zone.
 ```java
 public AdColonyVideoAd( String zone_id )
 ```
+**Parameters**   
+* *zone_id*  
+  * The zone you want the AdColonyVideoAd to play videos from.
 **Discussion**  
 You should create new AdColonyVideoAd objects every time you wish to play a video to avoid using outdated data internally.
 
@@ -164,6 +173,9 @@ Registers a listener to be notified about when a video advertisement finishes. R
 ```java
 public AdColonyVideoAd withListener( AdColonyAdListener listener )
 ```
+**Parameters**   
+* *listener*  
+  * The AdColonyAdListener to use.
 
 ---
 ####isReady()####
@@ -225,6 +237,9 @@ Creates a V4VC ad that will play from specified zone.
 ```java
 public AdColonyV4VCAd( String zone_id )
 ```
+**Parameters**   
+* *zone_id*  
+  * The zone you want the AdColonyV4VCAd to play videos from.
 **Discussion**  
 You should create new AdColonyV4VCAd objects every time you wish to play a video to avoid using outdated data internally.
 
@@ -306,6 +321,9 @@ This method, when implemented in your listener, is called when an ad starts play
 ```java
 public void onAdColonyAdStarted( AdColonyAd ad )
 ```
+**Parameters**   
+* *ad*  
+  * The ad that started playing.
 **Discussion**  
 This method is not called if the video ad fails to play.
 
@@ -315,6 +333,9 @@ This method, when implemented in your listener, is called when an ad attempt fin
 ```java
 public void onAdColonyAdAttemptFinished( AdColonyAd ad )
 ```
+**Parameters**   
+* *ad*  
+  * The ad that has finished playing (or finished attempting to play).
 **Discussion**  
 This method **is** called if the video ad fails to play.
 
@@ -363,6 +384,9 @@ This method, when implemented, is called when a V4VC reward is attempted given y
 ```java
 public void onAdColonyV4VCReward( AdColonyV4VCReward reward)
 ```
+**Parameters**   
+* *reward*  
+  * The AdColonyV4VCReward object that contains information about the completed V4VC reward event.
 
 ---
 ####success()####
