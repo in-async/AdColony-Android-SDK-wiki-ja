@@ -198,3 +198,34 @@ public int getAvailableViews()
 ###AdColonyV4VCAd Class Reference###
 **Note:**
 AdColonyV4VCAd objects can be interacted with just as [AdColonyVideoAd objects](API-Details#interacting-with-an-adcolonyvideoad-object) can, with the following additions:
+####Creating an AdColonyV4VCAd Object####
+[`+ AdColonyV4VCAd()`](API-Details#adcolonyv4vcad)<br>
+[`+ AdColonyV4VCAd( zone_id:String )`](API-Details#adcolonyv4vcad-string-zone_id-)<br>
+####Interacting With an AdColonyV4VCAd Object####
+[`+ withConfirmationDialog() : AdColonyV4VCAd`](API-Details#withconfirmationdialog)<br>
+[`+ withResultsDialog() : AdColonyV4VCAd`](API-Details#withresultsdialog)<br>
+[`+ getRewardName() : String`](API-Details#getrewardname)<br>
+[`+ getRewardAmount() : int`](API-Details#getrewardamount)<br>
+[`+ getViewsPerReward() : int`](API-Details#getviewsperreward)<br>
+[`+ getRemainingViewsUntilReward() : int`](API-Details#getremainingviewsuntilreward)
+
+###Class Methods###
+
+####AdColonyV4VCAd()####
+Creates a V4VC ad that will play from the first available zone.
+```java
+public AdColonyV4VCAd()
+```
+**Discussion**  
+You should create new AdColonyV4VCAd objects every time you wish to play a video to avoid using outdated data internally.
+
+---
+####AdColonyV4VCAd( String zone_id )####
+Creates a V4VC ad that will play from specified zone.
+```java
+public AdColonyV4VCAd( String zone_id )
+```
+**Discussion**  
+You should create new AdColonyV4VCAd objects every time you wish to play a video to avoid using outdated data internally.
+
+---
