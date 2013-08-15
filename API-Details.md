@@ -21,7 +21,7 @@
 
 ###Class Methods###
 
-####configure( Activity activity, String client_options, String app_id, String... zone_ids)####
+####configure( Activity activity, String client_options, String app_id, String... zone_ids )####
 Configures AdColony specifically for your app; required for usage of the rest of the API.
 ```java
 static public void configure( Activity activity,String client_options, String app_id, String... zone_ids )
@@ -66,7 +66,7 @@ static public void setCustomID( String id )
 The custom ID String is passed through as “&custom_id=...” and can be used at your discretion.
 
 ---
-####getDeviceID####
+####getDeviceID()####
 Returns a globally unique identifier tied to the current installation of an app.
 ```java
 static public String getDeviceID()
@@ -75,7 +75,7 @@ static public String getDeviceID()
 While an appropriate ID is generated automatically when the app is installed, you can also use [setDeviceID](API-Details#setdeviceid) to set an ID of your choosing. In either case, make sure that the device ID you use to contact the virtual currency server with is the same device ID that AdColony is using.
 
 ---
-####getCustomID####
+####getCustomID()####
 Returns the String previously passed into [setCustomID](API-Details#setcustomid)
 ```java
 static public String getCustomID()
@@ -93,7 +93,7 @@ static public void addV4VCListener()
 Further discussion on how to implement a V4VCListener can be found [here](API-Details#adcolonyv4vclistener-interface-reference)
 
 ---
-####removeV4VCListener####
+####removeV4VCListener( AdColonyV4VCListener listener )####
 AdColony stops sending V4VC results to the specified listener.
 ```java
 static public void removeV4VCListener()
@@ -102,21 +102,21 @@ static public void removeV4VCListener()
 Further discussion on how to implement a V4VCListener can be found [here](API-Details#adcolonyv4vclistener-interface-reference)
 
 ---
-####isTablet####
+####isTablet()####
 Returns "true" when run on Android tablets.
 ```java
 static public boolean isTablet()
 ```
 
 ---
-####pause####
+####pause()####
 Call this method from your Activity’s onPause() method.
 ```java
 static public void pause()
 ```
 
 ---
-####resume####
+####resume( Activity activity )####
 Call this method from your Activity’s onPause() method.
 ```java
 static public void resume(Activity activity)
@@ -136,7 +136,7 @@ This section (minus the constructors) applies to both AdColonyVideoAd and AdColo
 
 ###Class Methods###
 
-####AdColonyVideoAd####
+####AdColonyVideoAd()####
 Creates a video ad that will play from the first available zone.
 ```java
 public AdColonyVideoAd()
@@ -145,10 +145,10 @@ public AdColonyVideoAd()
 You should create new AdColonyVideoAd objects every time you wish to play a video to avoid using outdated data internally.
 
 ---
-####AdColonyVideoAd(String zone_id)####
+####AdColonyVideoAd( String zone_id )####
 Creates a video ad that will play from specified zone.
 ```java
-public AdColonyVideoAd()
+public AdColonyVideoAd( String zone_id )
 ```
 **Discussion**  
 You should create new AdColonyVideoAd objects every time you wish to play a video to avoid using outdated data internally.
