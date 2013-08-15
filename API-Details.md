@@ -134,6 +134,7 @@ This section (minus the constructors) applies to both AdColonyVideoAd and AdColo
 [`+ AdColonyVideoAd()`](API-Details#adcolonyvideoad)<br>
 [`+ AdColonyVideoAd( zone_id:String )`](API-Details#adcolonyvideoad-string-zone_id-)<br>
 [`+ withListener( listener:AdColonyAdListener ) : AdColonyVideoAd`](API-Details#withlistener-adcolonyadlistener-listener-)<br>
+[`+ isReady() : boolean`](API-Details#isready)<br>
 
 ###Class Methods###
 
@@ -158,7 +159,16 @@ You should create new AdColonyVideoAd objects every time you wish to play a vide
 ####withListener( AdColonyAdListener listener )####
 Registers a listener to be notified about when a video advertisement finishes. Returns the invoked AdColonyVideoAd object. 
 ```java
-public AdColonyVideoAd( String zone_id )
+public AdColonyVideoAd withListener( AdColonyAdListener listener )
 ```
+
+---
+####isReady()####
+Returns true if a video advertisement is ready to be played, or false otherwise.
+```java
+public boolean isReady()
+```
+**Discussion**  
+If isReady() returns false, more information about why is logged out.
 
 ---
