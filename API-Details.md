@@ -22,7 +22,7 @@ static public void configure( Activity activity,String client_options, String ap
 * *activity*
   * Your Activity context (i.e. 'this').
 * *client_options*
-  * A String containing your app version, origin store, and optionally a 'skippable' parameter to enable skippable ads in your app (example: “version=1.1,store:google,skippable”). **Note that no publisher earnings or V4VC rewards will occur if an ad is canceled using this method.**
+  * A String containing your app version, origin store, and optionally a 'skippable' parameter to enable skippable ads in your app (example: “version=1.1,store:google,skippable”). **Note: no publisher earnings or V4VC rewards will occur if an ad is canceled using this method.**
 * *app_id*  
   * The AdColony app ID for your app. This can be created and retrieved at the [Control Panel](http://clients.adcolony.com)  
 * *zone_ids*  
@@ -42,6 +42,6 @@ Specifies the string identifier to use throughout the app instead of the automat
   * The String identifier to use.  
 
 **Discussion**  
-Calls to [getDeviceID](API-Details#getdeviceid) will return this new ID as well. Must be called before AdColony.configure(). Note: setting your own device ID is completely optional.
+Calls to [getDeviceID](API-Details#getdeviceid) will return this new ID as well. Must be called before AdColony.configure(). **Note: setting your own device ID is completely optional.**
 
 ---
