@@ -259,6 +259,6 @@ Returns the name of your virtual currency as set on the dashboard.
 public String getRewardName()
 ```
 **Discussion**  
-The value that this method returns may not be valid if a successful ad config has not finished downloading (triggered by [configure](.
+The value that this method returns may not be valid if a successful ad config has not finished downloading (triggered by [configure](API-Details#configure-activity-activity-string-client_options-string-app_id-string-zone_ids-)).
 
 ---
