@@ -9,15 +9,15 @@
 ####Configuring AdColony####
 [`+ configure( activity:Activity, client_options:String, app_id:String, zone_ids:String...)`](API-Details#configure)
 ####Other AdColony Utilities####
-[`+ setDeviceID( id:String )`](API-Details#setdeviceid)<br>
-[`+ setCustomID( id:String )`](API-Details#setcustomid)<br>
+[`+ setDeviceID( id:String )`](API-Details#setdeviceid-string-id-)<br>
+[`+ setCustomID( id:String )`](API-Details#setcustomid-string-id-)<br>
 [`+ getDeviceID( id:String ) : String`](API-Details#getdeviceid)<br>
 [`+ getCustomID( id:String ) : String`](API-Details#getcustomid)<br>
-[`+ addV4VCListener( listener:AdColonyV4VCListener )`](API-Details#addv4vclistener)<br>
-[`+ removeV4VCListener( listener:AdColonyV4VCListener )`](API-Details#removev4vclistener)<br>
+[`+ addV4VCListener( listener:AdColonyV4VCListener )`](API-Details#addv4vclistener-adcolonyv4vclistener-listener-)<br>
+[`+ removeV4VCListener( listener:AdColonyV4VCListener )`](API-Details#removev4vclistener-adcolonyv4vclistener-listener-)<br>
 [`+ isTablet() : boolean`](API-Details#istablet)<br>
 [`+ pause()`](API-Details#pause)<br>
-[`+ resume( activity:Activity )`](API-Details#resume)
+[`+ resume( activity:Activity )`](API-Details#resume-activity-activity-)
 
 ###Class Methods###
 
