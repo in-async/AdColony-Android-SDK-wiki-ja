@@ -7,17 +7,17 @@
 ==     
 ###AdColony Class Reference###
 ####Configuring AdColony####
-[`+ configure( activity:Activity, client_options:String, app_id:String, zone_ids:String...)`](API-Details#configure-activity-activity-string-client_options-string-app_id-string-zone_ids-)
+[`configure( activity:Activity, client_options:String, app_id:String, zone_ids:String...)`](API-Details#configure-activity-activity-string-client_options-string-app_id-string-zone_ids-)
 ####Other AdColony Utilities####
-[`+ setDeviceID( id:String )`](API-Details#setdeviceid-string-id-)<br>
-[`+ setCustomID( id:String )`](API-Details#setcustomid-string-id-)<br>
-[`+ getDeviceID() : String`](API-Details#getdeviceid)<br>
-[`+ getCustomID() : String`](API-Details#getcustomid)<br>
-[`+ addV4VCListener( listener:AdColonyV4VCListener )`](API-Details#addv4vclistener-adcolonyv4vclistener-listener-)<br>
-[`+ removeV4VCListener( listener:AdColonyV4VCListener )`](API-Details#removev4vclistener-adcolonyv4vclistener-listener-)<br>
-[`+ isTablet() : boolean`](API-Details#istablet)<br>
-[`+ pause()`](API-Details#pause)<br>
-[`+ resume( activity:Activity )`](API-Details#resume-activity-activity-)
+[`setDeviceID( id:String )`](API-Details#setdeviceid-string-id-)<br>
+[`setCustomID( id:String )`](API-Details#setcustomid-string-id-)<br>
+[`getDeviceID() : String`](API-Details#getdeviceid)<br>
+[`getCustomID() : String`](API-Details#getcustomid)<br>
+[`addV4VCListener( listener:AdColonyV4VCListener )`](API-Details#addv4vclistener-adcolonyv4vclistener-listener-)<br>
+[`removeV4VCListener( listener:AdColonyV4VCListener )`](API-Details#removev4vclistener-adcolonyv4vclistener-listener-)<br>
+[`isTablet() : boolean`](API-Details#istablet)<br>
+[`pause()`](API-Details#pause)<br>
+[`resume( activity:Activity )`](API-Details#resume-activity-activity-)
 
 ###Class Methods###
 
@@ -131,13 +131,13 @@ static public void resume(Activity activity)
 **Note:**
 This section (minus the constructors) applies to both AdColonyVideoAd and AdColonyV4VCAd objects. Click [here](API-Details#adcolonyv4vcad-class-reference) for information specific to AdColonyV4VCAd objects.
 ####Creating an AdColonyVideoAd Object####
-[`+ AdColonyVideoAd()`](API-Details#adcolonyvideoad)<br>
-[`+ AdColonyVideoAd( zone_id:String )`](API-Details#adcolonyvideoad-string-zone_id-)<br>
+[`AdColonyVideoAd()`](API-Details#adcolonyvideoad)<br>
+[`AdColonyVideoAd( zone_id:String )`](API-Details#adcolonyvideoad-string-zone_id-)<br>
 ####Interacting With an AdColonyVideoAd Object####
-[`+ withListener( listener:AdColonyAdListener ) : AdColonyVideoAd`](API-Details#withlistener-adcolonyadlistener-listener-)<br>
-[`+ isReady() : boolean`](API-Details#isready)<br>
-[`+ show()`](API-Details#show)<br>
-[`+ getAvailableViews() : int`](API-Details#getavailableviews)
+[`withListener( listener:AdColonyAdListener ) : AdColonyVideoAd`](API-Details#withlistener-adcolonyadlistener-listener-)<br>
+[`isReady() : boolean`](API-Details#isready)<br>
+[`show()`](API-Details#show)<br>
+[`getAvailableViews() : int`](API-Details#getavailableviews)
 
 ###Instance Methods###
 
@@ -199,15 +199,15 @@ public int getAvailableViews()
 **Note:**
 AdColonyV4VCAd objects can be interacted with just as [AdColonyVideoAd objects](API-Details#interacting-with-an-adcolonyvideoad-object) can, with the following additions:
 ####Creating an AdColonyV4VCAd Object####
-[`+ AdColonyV4VCAd()`](API-Details#adcolonyv4vcad)<br>
-[`+ AdColonyV4VCAd( zone_id:String )`](API-Details#adcolonyv4vcad-string-zone_id-)<br>
+[`AdColonyV4VCAd()`](API-Details#adcolonyv4vcad)<br>
+[`AdColonyV4VCAd( zone_id:String )`](API-Details#adcolonyv4vcad-string-zone_id-)<br>
 ####Interacting With an AdColonyV4VCAd Object####
-[`+ withConfirmationDialog() : AdColonyV4VCAd`](API-Details#withconfirmationdialog)<br>
-[`+ withResultsDialog() : AdColonyV4VCAd`](API-Details#withresultsdialog)<br>
-[`+ getRewardName() : String`](API-Details#getrewardname)<br>
-[`+ getRewardAmount() : int`](API-Details#getrewardamount)<br>
-[`+ getViewsPerReward() : int`](API-Details#getviewsperreward)<br>
-[`+ getRemainingViewsUntilReward() : int`](API-Details#getremainingviewsuntilreward)
+[`withConfirmationDialog() : AdColonyV4VCAd`](API-Details#withconfirmationdialog)<br>
+[`withResultsDialog() : AdColonyV4VCAd`](API-Details#withresultsdialog)<br>
+[`getRewardName() : String`](API-Details#getrewardname)<br>
+[`getRewardAmount() : int`](API-Details#getrewardamount)<br>
+[`getViewsPerReward() : int`](API-Details#getviewsperreward)<br>
+[`getRemainingViewsUntilReward() : int`](API-Details#getremainingviewsuntilreward)
 
 ###Instance Methods###
 
@@ -292,13 +292,13 @@ The value that this method returns may not be valid if a successful ad config ha
 
 ###AdColonyAdListener Interface Reference###
 ####Implement the Following####
-[`+ onAdColonyAdStarted( ad:AdColonyAd )`](API-Details#onadcolonyadstarted-adcolonyad-ad-)<br>
-[`+ onAdColonyAdAttemptFinished( ad:AdColonyAd )`](API-Details#onadcolonyadattemptfinished-adcolonyad-ad-)<br>
+[`onAdColonyAdStarted( ad:AdColonyAd )`](API-Details#onadcolonyadstarted-adcolonyad-ad-)<br>
+[`onAdColonyAdAttemptFinished( ad:AdColonyAd )`](API-Details#onadcolonyadattemptfinished-adcolonyad-ad-)<br>
 ####Invoke on Returned AdColonyAd Object####
-[`+ shown() : boolean`](API-Details#shown)<br>
-[`+ canceled() : boolean`](API-Details#canceled)<br>
-[`+ noFill() : boolean`](API-Details#nofill)<br>
-[`+ skipped() : boolean`](API-Details#skipped)
+[`shown() : boolean`](API-Details#shown)<br>
+[`canceled() : boolean`](API-Details#canceled)<br>
+[`noFill() : boolean`](API-Details#nofill)<br>
+[`skipped() : boolean`](API-Details#skipped)
 
 ###Methods###
 ####onAdColonyAdStarted( AdColonyAd ad )####
@@ -352,11 +352,11 @@ public boolean skipped()
 
 ###AdColonyV4VCListener Interface Reference###
 ####Implement the Following####
-[`+ onAdColonyV4VCReward( reward:AdColonyV4VCReward )`](API-Details#onadcolonyv4vcreward-adcolonyv4vcreward-reward-)<br>
+[`onAdColonyV4VCReward( reward:AdColonyV4VCReward )`](API-Details#onadcolonyv4vcreward-adcolonyv4vcreward-reward-)<br>
 ####Invoke on Returned AdColonyV4VCReward Object####
-[`+ success() : boolean`](API-Details#success)<br>
-[`+ name() : String`](API-Details#name)<br>
-[`+ amount() : int`](API-Details#amount)<br>
+[`success() : boolean`](API-Details#success)<br>
+[`name() : String`](API-Details#name)<br>
+[`amount() : int`](API-Details#amount)<br>
 ###Methods###
 ####onAdColonyV4VCReward( AdColonyV4VCReward reward )####
 This method, when implemented, is called when a V4VC reward is attempted given you have added it to the list of AdColonyV4VCListeners ([see here](API-Details#addAdColonyV4VCListener-adcolonyv4vclistener-listener-)).
