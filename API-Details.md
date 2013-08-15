@@ -193,4 +193,8 @@ Returns the remaining number of plays available today.
 public int getAvailableViews()
 ```
 
----
+
+
+###AdColonyV4VCAd Class Reference###
+**Note:**
+AdColonyV4VCAd objects can be interacted with just as [AdColonyVideoAd objects](API-Details#interacting-with-an-adcolonyvideoad-object) can, with the following additions:
