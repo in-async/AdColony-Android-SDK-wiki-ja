@@ -133,6 +133,7 @@ This section (minus the constructors) applies to both AdColonyVideoAd and AdColo
 ####Creating an AdColonyVideoAd Object####
 [`+ AdColonyVideoAd()`](API-Details#adcolonyvideoad)<br>
 [`+ AdColonyVideoAd( zone_id:String )`](API-Details#adcolonyvideoad-string-zone_id-)<br>
+####Interacting With an AdColonyVideoAd Object####
 [`+ withListener( listener:AdColonyAdListener ) : AdColonyVideoAd`](API-Details#withlistener-adcolonyadlistener-listener-)<br>
 [`+ isReady() : boolean`](API-Details#isready)<br>
 [`+ show()`](API-Details#show)<br>
