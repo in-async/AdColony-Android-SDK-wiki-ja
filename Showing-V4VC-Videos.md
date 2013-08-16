@@ -50,4 +50,20 @@ where v4vc_zone_id is a String matching your V4VC enabled zone gathered from the
 [Pre and Post-Popups](Showing-V4VC-Videos#pre-and-post-popups)<br>
 [Server-Side Rewards](Showing-V4VC-Videos#server-side-rewards)
 ##AdColonyV4VCListener##
-After a V4VC video plays AdColony will inform your app of the results. Create a class that implements the AdColonyV4VCListener interface and add the listener to AdColony immediately after calling 'javaAdColony.configure()'
+After a V4VC video plays AdColony will inform your app of the results. Create a class that implements the AdColonyV4VCListener interface and add the listener to AdColony immediately after calling configure:
+```java
+AdColonyV4VCListener listener = new AdColonyV4VCListener()
+{
+  public void onAdColonyV4VCReward(AdColonyV4VCReward reward)
+  {
+    //Just an example, see API Details page for more information.
+    if(reward.success())
+    {
+      //Reward user
+    }
+  }
+};
+
+AdColony.addV4VCListener(listener);
+
+===
