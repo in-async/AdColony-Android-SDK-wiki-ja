@@ -1,7 +1,7 @@
 AdColony interstitial ads are a video ad immediately followed by an end-card (described in more detail in the AdColony Product Overview).
 
 ###Instructions###
-Once you've performed the required [[Project Setup]], you can display an AdColony interstitial ad in your app in two easy steps:
+Once you've performed the required [[Project Setup]], you can display an AdColony interstitial ad in your app in 3 easy steps:
 ####Step 1: Configure AdColony####
 In your **main Activity's** onCreate method, call configure like so:
 ```java
@@ -11,3 +11,16 @@ Replace client_options with your client options String (e.g. "version:2.1,store:
 **Note:** you should only ever call configure **once** and make sure it is done in your **main Activity's** onCreate method.
 
 ===
+####Step 2: Pause and Resume####
+Override your Activity’s onPause() and onResume() methods to call corresponding AdColony methods as follows:
+```java
+public void onPause() 
+{
+super.onPause();
+AdColony.pause(); 
+}
+public void onResume() 
+{
+super.onResume();
+AdColony.resume( this ); 
+}
