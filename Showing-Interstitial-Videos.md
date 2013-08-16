@@ -16,12 +16,13 @@ Override your Activity’s onPause() and onResume() methods to call correspondin
 ```java
 public void onPause() 
 {
-super.onPause();
-AdColony.pause(); 
+  super.onPause();
+  AdColony.pause(); 
 }
+
 public void onResume() 
 {
-super.onResume();
-AdColony.resume( this ); 
+  super.onResume();
+  AdColony.resume( this ); 
 }
 ```
