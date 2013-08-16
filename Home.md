@@ -8,7 +8,7 @@ AdColony delivers high-definition Instant-Play video ads that can be displayed a
 
 ===
 ###Contents###
-* [[Updating from 1.9.x]]
+* [[Updating From 1.9.x]]
 * [[Project Setup]]
 * [[Showing Interstitial Videos]]
 * [[Showing V4VC Videos]]
