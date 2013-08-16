@@ -24,3 +24,4 @@ public void onResume()
 super.onResume();
 AdColony.resume( this ); 
 }
+```
