@@ -169,3 +169,5 @@ You must ensure your callback returns the appropriate string to the AdColony ser
   * Transaction finished. Return this when the uid is not valid or the security check is not passed.
 * Anything else
   * AdColony will periodically retry to contact your server with this transaction. This should only be used in the case of some error.
+**Note:** The only acceptable reasons to not reward a transaction are if the uid was invalid, the security check did not pass, or the transaction was a duplicate which was already rewarded.
+
