@@ -1,4 +1,6 @@
-AdColony V4VC (Videos-for-Virtual-Currency) is a system built on top of our [[interstitial ads|Showing Interstitial Videos]] that allows you to reward your app's users with the app's virtual currency upon completion of an ad. AdColony V4VC does not keep track of your users' currency balances for you; it provides notifications to you when a user needs to be credited with a reward.
+AdColony V4VC (Videos-for-Virtual-Currency) is a system built on top of our [[interstitial ads|Showing Interstitial Videos]] that allows you to reward your app's users with the app's virtual currency upon completion of an ad. AdColony V4VC does not keep track of your users' currency balances for you; it provides notifications to you when a user needs to be credited with a reward.<br><br>
+[Basics](Showing-V4VC-Videos#basics)
+[Advanced Usage](Showing-V4VC-Videos#advanced-usage)
 ###Basics###
 ####Step 1: Configure AdColony####
 First, make sure you have imported the AdColony library:
@@ -39,7 +41,7 @@ or
 ```java
 AdColonyV4VCAd ad = new AdColonyV4VCAd(v4vc_zone_id).show();
 ```
-where v4vc_zone_id is a String matching your V4VC enabled zone gathered from the dashboard/included in your configure call.<br>
+where v4vc_zone_id is a String matching your V4VC enabled zone gathered from the dashboard/included in your configure call.<br><br>
 **Note:** this is a minimal example, please see below and make note of the [[API Details]] page for more advanced usage.
 
 ===
