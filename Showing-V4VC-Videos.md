@@ -91,7 +91,6 @@ You must create a URL on your servers to receive the AdColony callback. The call
 
 ===
 ####Step 2####
-ou must make your URL respond appropriately to the AdColony callback. The format of the URL that AdColony will call is as follows, where brackets indicate strings that will vary based on your application and the details of the transaction:
-```url
-http://www.yourserver.com/anypath/callback_url.php]?id=[transactionid]&uid=[user id]&amount=[currencyamounttoaward]&currency=[nameofcurrencyto award]&verifier=[securityvalue]
-```
+You must make your URL respond appropriately to the AdColony callback. The format of the URL that AdColony will call is as follows, where brackets indicate strings that will vary based on your application and the details of the transaction:<br><br>
+
+_[http://www.yourserver.com/anypath/callback_url.php]?id=[transaction id]&uid=[user id]&amount=[currency amount to award]&currency=[name of currencyto award]&verifier=[security value]_<br><br>
