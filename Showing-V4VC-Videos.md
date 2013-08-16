@@ -90,3 +90,8 @@ In AdColony we have an option to enable client­-side handling of virtual curren
 You must create a URL on your servers to receive the AdColony callback. The callback URL must not require any authentication to reach your server. Once you have chosen this URL, you should input it in the video zone configuration page on the [Control Panel](http://clients.adcolony.com).
 
 ===
+####Step 2####
+ou must make your URL respond appropriately to the AdColony callback. The format of the URL that AdColony will call is as follows, where brackets indicate strings that will vary based on your application and the details of the transaction:
+```url
+http://www.yourserver.com/anypath/callback_url.php]?id=[transactionid]&uid=[user id]&amount=[currencyamounttoaward]&currency=[nameofcurrencyto award]&verifier=[securityvalue]
+```
