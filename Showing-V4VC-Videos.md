@@ -65,5 +65,5 @@ AdColonyV4VCListener listener = new AdColonyV4VCListener()
 };
 
 AdColony.addV4VCListener(listener);
-
+```
 ===
