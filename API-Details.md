@@ -354,7 +354,7 @@ public boolean shown()
 
 ---
 ####canceled()####
-When invoked on the AdColonyAd object returned from [onAdColonyAdAttemptFinished](API-Details#onadcolonyattemptfinished-adcolonyad-ad-), this method will return true if the ad was canceled.
+When invoked on the AdColonyAd object returned from [onAdColonyAdAttemptFinished](API-Details#onadcolonyadattemptfinished-adcolonyad-ad-), this method will return true if the ad was canceled.
 ```java
 public boolean canceled()
 ```
