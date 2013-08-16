@@ -4,7 +4,6 @@
 3. In the AdColonyAdListener interface the following methods have been renamed:
 * onAdColonyVideoStarted() --­> onAdColonyAdStarted(ad:AdColonyAd)
 * onAdColonyVideoFinished() ­--> onAdColonyAdAttemptFinished(ad:AdColonyAd)
-
 4. When onAdColonyAdAttemptFinished() is called, the AdColonyAd parameter may be
 queried for the status using one of the following methods:
 * shown():boolean // returns true if an ad was shown as expected 
