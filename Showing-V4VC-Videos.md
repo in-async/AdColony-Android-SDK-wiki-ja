@@ -94,3 +94,31 @@ You must create a URL on your servers to receive the AdColony callback. The call
 You must make your URL respond appropriately to the AdColony callback. The format of the URL that AdColony will call is as follows, where brackets indicate strings that will vary based on your application and the details of the transaction:<br><br>
 
 _[http://www .yourserver.com/anypath/callback_url.php]?id=[transaction id]&uid=[user id]&amount=[currency amount to award]&currency=[name of currency to award]&verifier=[security value]_<br><br>
+
+If your application provides a custom ID to AdColony, you will need to add “&custom_id=[CUSTOM_ID]” to your zone’s callback URL or it will not be provided to your server.<br><br>
+
+It is not necessary to use PHP for your callback URL. You can use any server side language that supports an MD5 hash check to respond to URL requests on your server.<br><br>
+
+For your convenience, the following PHP with MySQL sample code illustrates how to access the URL parameters, perform an MD5 hash check, check for duplicate transactions, and how to respond appropriately from the URL:
+```php
+$MY_SECRET_KEY="Thiscomesfromadcolony.com";
+$trans_id=mysql_real_escape_string($_GET['id']); $dev_id=mysql_real_escape_string($_GET['uid']); $amt=mysql_real_escape_string($_GET['amount']); $currency=mysql_real_escape_string($_GET['currency']); $verifier=mysql_real_escape_string($_GET['verifier']);
+//verifyhash $test_string="".$trans_id.$dev_id.$amt.$currency.$MY_SECRET_KEY; $test_result=md5($test_string);
+if($test_result!=$verifier){
+echo"vc_decline";
+die; }
+//checkforavaliduser $user_id=//getyourinternaluseridfromthedeviceidhere if(!$user_id){
+echo"vc_decline";
+die; }
+//insertthenewtransaction $query="INSERTINTOAdColony_Transactions(id,amount,name,user_id,time)".
+"VALUES($trans_id,$amt,'$currency',$user_id,UTC_TIMESTAMP())"; $result=mysql_query($query);
+if(!$result){
+//checkforduplicateoninsertion if(mysql_errno()==1062){
+echo"vc_success";
+die; }
+//otherwiseinsertfailedandAdColonyshouldretrylater else{
+echo"mysqlerrornumber".mysql_errno();
+die; }
+}
+//awardtheusertheappropriateamountandtypeofcurrencyhere echo"vc_success";
+```
