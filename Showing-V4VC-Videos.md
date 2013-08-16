@@ -84,7 +84,5 @@ AdColonyV4VC ad = new AdColonyV4VCAd(v4vc_zone_id).withConfirmationDialog().with
 
 ===
 ####Server-Side Rewards####
-To provide security for your virtual currency economy, AdColony issues callbacks which use message hashing for security directly to your servers that handle your virtual currency. In order to reward your users with the virtual currency rewarded by AdColony, you should create a callback URL on your game’s server system. AdColony will pass URL parameters to your
-￼￼￼
-game’s server via this URL, which are then used to update a user’s virtual currency balance in your system.
-In AdColony we have an option to enable client­side handling of virtual currency. Please note that use of this option is not advised because there is no way to create a secure client­side virtual currency system. While we do our best to obfuscate our client­side system, it is not possible to ensure its security. If you are unable to use a server to manage your virtual currency system, contact support@adcolony.com for usage guidelines.
+To provide security for your virtual currency economy, AdColony issues callbacks which use message hashing for security directly to your servers that handle your virtual currency. In order to reward your users with the virtual currency rewarded by AdColony, you should create a callback URL on your game’s server system. AdColony will pass URL parameters to your game’s server via this URL, which are then used to update a user’s virtual currency balance in your system. <br><br>
+In AdColony we have an option to enable client­-side handling of virtual currency. Please note that use of this option is not advised because there is no way to create a secure client-­side virtual currency system. While we do our best to obfuscate our client­-side system, it is not possible to ensure its security. If you are unable to use a server to manage your virtual currency system, contact support@adcolony.com for usage guidelines.
