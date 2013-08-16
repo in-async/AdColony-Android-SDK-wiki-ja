@@ -76,7 +76,7 @@ While an appropriate ID is generated automatically when the app is installed, yo
 
 ---
 ####getCustomID()####
-Returns the String previously passed into [setCustomID](API-Details#setcustomid)
+Returns the String previously passed into [setCustomID](API-Details#setcustomid-string-id-)
 ```java
 static public String getCustomID()
 ```
