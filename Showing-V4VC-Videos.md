@@ -157,3 +157,15 @@ CREATE TABLE `AdColony_Transactions` (
 PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 ```
+To prevent duplicate transactions, you must make a record of the id of every transaction received, and check each incoming transaction id against that record after verifying the parameters. If a transaction is a duplicate, there is no need to reward the user, and you should return a success condition.<br><br>
+After checking for duplicate transactions, you should reward your user the specified amount of the specified type of currency.
+
+===
+####Step 3####
+You must ensure your callback returns the appropriate string to the AdColony server based on the result of the transaction:<br>
+* "vc_success"
+* * Transaction finished. Return this when the callback is received and user credited.
+* "vc_decline"
+* * Transaction finished. Return this when the uid is not valid or the security check is not passed.
+* Anything else
+* * AdColony will periodically retry to contact your server with this transaction. This should only be used in the case of some error.
