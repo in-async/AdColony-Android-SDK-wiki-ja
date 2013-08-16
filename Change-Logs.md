@@ -1,5 +1,5 @@
 **2.0.0 – June 6, 2013**<br>
-1. AdColony Android now requires OS 2.2 or higher.
+1. AdColony Android now requires OS 2.2 or higher.<br>
 2. AdColonyVideoListener has been renamed to AdColonyAdListener.
 3. In the AdColonyAdListener interface the following methods have been renamed:
   * onAdColonyVideoStarted() --­> onAdColonyAdStarted(ad:AdColonyAd)
