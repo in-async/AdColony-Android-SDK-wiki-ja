@@ -164,8 +164,8 @@ After checking for duplicate transactions, you should reward your user the speci
 ####Step 3####
 You must ensure your callback returns the appropriate string to the AdColony server based on the result of the transaction:<br>
 * "vc_success"
-* * Transaction finished. Return this when the callback is received and user credited.
+  * Transaction finished. Return this when the callback is received and user credited.
 * "vc_decline"
-* * Transaction finished. Return this when the uid is not valid or the security check is not passed.
+  * Transaction finished. Return this when the uid is not valid or the security check is not passed.
 * Anything else
-* * AdColony will periodically retry to contact your server with this transaction. This should only be used in the case of some error.
+  * AdColony will periodically retry to contact your server with this transaction. This should only be used in the case of some error.
