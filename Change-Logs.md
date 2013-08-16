@@ -2,8 +2,8 @@
 1. AdColony Android now requires OS 2.2 or higher.<br>
 2. AdColonyVideoListener has been renamed to AdColonyAdListener.<br>
 3. In the AdColonyAdListener interface the following methods have been renamed:<br>
-onAdColonyVideoStarted() --­> onAdColonyAdStarted(ad:AdColonyAd)<br>
-onAdColonyVideoFinished() ­--> onAdColonyAdAttemptFinished(ad:AdColonyAd)<br>
+`onAdColonyVideoStarted() --­> onAdColonyAdStarted(ad:AdColonyAd)`<br>
+`onAdColonyVideoFinished() ­--> onAdColonyAdAttemptFinished(ad:AdColonyAd)`<br>
 4. When onAdColonyAdAttemptFinished() is called, the AdColonyAd parameter may be
 queried for the status using one of the following methods:<br>
 `shown():boolean // returns true if an ad was shown as expected`<br> 
