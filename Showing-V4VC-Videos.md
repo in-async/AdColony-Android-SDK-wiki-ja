@@ -147,3 +147,13 @@ if(!$result)
 //award the user the appropriate amount and type of currency here 
 echo"vc_success";
 ```
+The MySQL database table referenced by the previous PHP sample can be created using the following code:
+```mysql
+CREATE TABLE `AdColony_Transactions` (
+`id` bigint(20) NOT NULL default '0',
+`amount` int(11) default NULL,
+`name` enum('Currency Name 1') default NULL, `user_id` int(11) default NULL,
+`time` timestamp NULL default NULL,
+PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+```
