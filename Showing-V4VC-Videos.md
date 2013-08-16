@@ -37,11 +37,11 @@ To show an AdColony V4VC video advertisement, create an AdColonyV4VCAd object an
 ```java
 AdColonyV4VCAd ad = new AdColonyV4VCAd().show();
 ```
-or
+Or
 ```java
 AdColonyV4VCAd ad = new AdColonyV4VCAd(v4vc_zone_id).show();
 ```
-where v4vc_zone_id is a String matching your V4VC enabled zone gathered from the dashboard/included in your configure call.<br><br>
+Where v4vc_zone_id is a String matching your V4VC enabled zone gathered from the dashboard/included in your configure call.<br><br>
 **Note:** this is a minimal example, please see below and make note of the [[API Details]] page for more advanced usage.
 
 ===
@@ -68,3 +68,17 @@ AdColony.addV4VCListener(listener);
 ```
 ===
 ####Pre and Post-Popups####
+AdColony offers pre and post-popup dialogs that alert the user of your application with a confirmation and/or results message as appropriate.<br><br>
+To use only pre-popups, your show method call would look like this:
+```java
+AdColonyV4VCAd ad = new AdColonyV4VCAd(v4vc_zone_id).withConfirmationDialog().show();
+```
+To use only post-popups, your show method call would look like this:
+```java
+AdColonyV4VC ad = new AdColonyV4VCAd(v4vc_zone_id).withResultsDialog().show();
+```
+And the following would be your show method call if you want to use both dialogs:
+```java
+AdColonyV4VC ad = new AdColonyV4VCAd(v4vc_zone_id).withConfirmationDialog().withResultsDialog().show();
+```
+===
