@@ -1,4 +1,4 @@
-####Changes####
+####Necessary Changes####
 1. AdColony Android now requires OS 2.3.3 or higher to play ads.
 2. AdColonyVideoListener has been renamed to AdColonyAdListener.
 3. In the AdColonyAdListener interface the following methods have been renamed:
