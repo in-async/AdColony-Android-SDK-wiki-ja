@@ -81,4 +81,5 @@ And the following would be your show method call if you want to use both dialogs
 ```java
 AdColonyV4VC ad = new AdColonyV4VCAd(v4vc_zone_id).withConfirmationDialog().withResultsDialog().show();
 ```
+
 ===
