@@ -3,7 +3,11 @@ AdColony interstitial ads are a video ad immediately followed by an end-card (de
 ###Instructions###
 Once you've performed the required [[Project Setup]], you can display an AdColony interstitial ad in your app in 3 easy steps:
 ####Step 1: Configure AdColony####
-In your **main Activity's** onCreate method, call configure like so:
+First, make sure you have imported the AdColony library:
+```java
+import com.jirbo.adcolony.*;
+```
+Next, in your **main Activity's** onCreate method, call configure like so:
 ```java
 AdColony.configure(this, client_options, app_id, zone_ids);
 ```
@@ -26,3 +30,11 @@ public void onResume()
   AdColony.resume( this ); 
 }
 ```
+
+===
+####Step 3: Create AdColonyVideoAd Object and Call Show####
+To show an AdColony interstitial video advertisement, create an AdColonyVideoAd object and call show on it as follows:
+```java
+AdColonyVideoAd ad = new AdColonyVideoAd().show();
+```
+**Note:** this is a minimal example, please make note of the [[API Details]] page for more advanced usage.
