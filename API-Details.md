@@ -347,7 +347,7 @@ This method **is** called if the video ad fails to play.
 
 ---
 ####shown()####
-When invoked on the AdColonyAd object returned from [onAdColonyAdAttemptFinished](API-Details#onadcolonyattemptfinished-adcolonyad-ad-), this method will return true if the ad was successfully shown.
+When invoked on the AdColonyAd object returned from [onAdColonyAdAttemptFinished](API-Details#onadcolonyadattemptfinished-adcolonyad-ad-), this method will return true if the ad was successfully shown.
 ```java
 public boolean shown()
 ```
