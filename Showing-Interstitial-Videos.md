@@ -41,5 +41,5 @@ Or:
 ```java
 AdColonyVideoAd ad = new AdColonyVideoAd(zone_id).show();
 ```
-Where zone_id is a String matching a specific zone gathered from the dashboard and included in your configure call.<br>
+Where zone_id is a String matching a specific zone gathered from the dashboard and included in your configure call.<br><br>
 **Note:** this is a minimal example, please make note of the [[API Details]] page for more advanced usage.
