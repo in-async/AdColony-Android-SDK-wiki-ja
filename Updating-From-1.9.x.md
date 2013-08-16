@@ -2,8 +2,8 @@
 1. AdColony Android now requires OS 2.3.3 or higher to play ads.
 2. AdColonyVideoListener has been renamed to AdColonyAdListener.
 3. In the AdColonyAdListener interface the following methods have been renamed:
-  * onAdColonyVideoStarted() ­> onAdColonyAdStarted(ad:AdColonyAd)
-  * onAdColonyVideoFinished() ­> onAdColonyAdAttemptFinished(ad:AdColonyAd)
+  * onAdColonyVideoStarted() --­> onAdColonyAdStarted(ad:AdColonyAd)
+  * onAdColonyVideoFinished() --­> onAdColonyAdAttemptFinished(ad:AdColonyAd)
 5. Class AdColonyVideoAd has been refactored into two classes: “AdColonyVideoAd” for
 standard ads and “AdColonyV4VCAd” for virtual currency ads.
 6. Optional ad settings are now assigned through separate chainable calls rather than
