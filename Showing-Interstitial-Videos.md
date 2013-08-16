@@ -1,4 +1,4 @@
-AdColony interstitial ads are a video ad immediately followed by an end-card (described in more detail in the AdColony Product Overview).
+AdColony interstitial ads are a video ad immediately followed by an end-card.
 
 ###Instructions###
 Once you've performed the required [[Project Setup]], you can display an AdColony interstitial ad in your app in 3 easy steps:
