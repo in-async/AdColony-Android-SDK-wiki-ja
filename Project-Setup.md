@@ -12,8 +12,30 @@ Ensure the following 4 permissions are set in your project's "AndroidManifest.xm
 4. READ_PHONE_STATE <br><br>
 You can do this by pasting the following lines before the <application...> tag:
 ```xml
-<uses-­permission android:name="android.permission.INTERNET" />
-<uses­-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
-<uses-­permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
-<uses-­permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 ```
+In order for our Dynamic End Cards to perform optimally, we suggest enabling hardware acceleration by adding the following line to your application tag in your manifest:<br>
+```xml
+android:hardwareAccelerated="true"
+```
+Next, copy and paste the following three activity definitions just before the end application tag near the bottom:
+```xml
+<activity android:name="com.jirbo.adcolony.AdColonyOverlay"
+android:configChanges="keyboardHidden|orientation|screenSize"
+android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+<activity android:name="com.jirbo.adcolony.AdColonyFullscreen"
+android:configChanges="keyboardHidden|orientation|screenSize"
+android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+
+<activity android:name="com.jirbo.adcolony.AdColonyBrowser"
+android:configChanges="keyboardHidden|orientation|screenSize"
+android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+```
+**Note:** if your application targets below API 13, you will likely need to remove screenSize from the configChanges property of the above activity tags.
+
+===
+####Step 3: Gather Information From Your AdColony Account####
