@@ -10,7 +10,7 @@ Ensure the following 4 permissions are set in your project's "AndroidManifest.xm
 2. WRITE_EXTERNAL_STORAGE<br>
 3. ACCESS_NETWORK_STATE<br>
 4. READ_PHONE_STATE <br><br>
-You can do this by pasting the following lines before the <application...> tag:
+You can do this by pasting the following lines before the \<application...> tag:
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
