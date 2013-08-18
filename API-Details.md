@@ -211,12 +211,12 @@ public int getAvailableViews()
 
 
 ###AdColonyV4VCAd Class Reference###
+**Note:**
+AdColonyV4VCAd objects can be interacted with just as [AdColonyVideoAd objects](API-Details#interacting-with-an-adcolonyvideoad-object) can, with the following additions:
 ####Creating an AdColonyV4VCAd Object####
 [`AdColonyV4VCAd()`](API-Details#adcolonyv4vcad)<br>
 [`AdColonyV4VCAd( zone_id:String )`](API-Details#adcolonyv4vcad-string-zone_id-)<br>
 ####Interacting With an AdColonyV4VCAd Object####
-**Note:**
-AdColonyV4VCAd objects can be interacted with just as [AdColonyVideoAd objects](API-Details#interacting-with-an-adcolonyvideoad-object) can, with the following additions:<br>
 [`withConfirmationDialog() : AdColonyV4VCAd`](API-Details#withconfirmationdialog)<br>
 [`withResultsDialog() : AdColonyV4VCAd`](API-Details#withresultsdialog)<br>
 [`getRewardName() : String`](API-Details#getrewardname)<br>
