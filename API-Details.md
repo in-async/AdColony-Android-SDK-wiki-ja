@@ -178,7 +178,7 @@ public AdColonyVideoAd withListener( AdColonyAdListener listener )
 ```
 **Parameters**   
 * *listener*  
-  * The AdColonyAdListener to use.
+  * The [AdColonyAdListener](API-Details#adcolonyadlistener-interface-reference) to use.
 
 ---
 ####isReady()####
