@@ -8,7 +8,8 @@
 2. Fixed video request tracking.<br>
 3. Added functionality for restricting ads and caching based on network type.<br>
 4. Changes to overlay button scaling and sensitivity.<br>
-5. Other general dynamic end card related bug fixes.
+5. Added support for self-hosted HTML5 video playing triggered by dynamic end card engagement.
+6. Other general dynamic end card related bug fixes.
 
 ===
 **2.0.0 (Beta) – June 6, 2013** <br>
