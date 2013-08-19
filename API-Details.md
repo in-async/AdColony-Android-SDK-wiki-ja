@@ -400,7 +400,7 @@ When invoked on the returned [AdColonyV4VCReward](API-Details#onadcolonyv4vcrewa
 ```java
 public boolean success()
 ```
-**Discussion**
+**Discussion**<br>
 In the event of a various network problems, a currency transaction will not be instantaneous, which can result in this callback being executed by AdColony at any point during your application.
 
 ---
