@@ -16,3 +16,7 @@ slightly:
 ```xml
 android:hardwareAccelerated="true"
 ```
+11. Your configChanges property inside of the AdColony activity tags in your AndroidManifest.xml should now look like this (unless your project targets less than API 13 - more details available in [[Project Setup]]):
+```xml
+android:configChanges="keyboardHidden|orientation|screenSize"
+```
