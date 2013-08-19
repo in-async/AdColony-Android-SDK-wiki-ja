@@ -196,7 +196,7 @@ Shows a video advertisement if possible.
 public void show()
 ```
 **Discussion**  
-No ad will be shown if [isReady](API-Details#isready) returns false. You can chain together a call to show with the [withListener](API-Details#withlistener-adcolonyadlistener-listener-) like so:<br>
+No ad will be shown if [isReady](API-Details#isready) returns false. You can chain together a call to show with the [withListener](API-Details#withlistener-adcolonyadlistener-listener-) method like so:<br>
 ```java
 AdColonyVideoAd ad = new AdColonyVideoAd().withListener( listener ).show();
 ```
