@@ -1,3 +1,16 @@
+**2.0.2 (Beta) - August 9, 2013**<br>
+1. Ad specific play limits now function off of starts rather than completes.<br>
+2. General bug fixes.
+
+===
+**2.0.1 (Beta) - July 16, 2013**<br>
+1. AdColony now uses SSL for ad configuration downloads.<br>
+2. Fixed video request tracking.<br>
+3. Added functionality for restricting ads and caching based on network type.<br>
+4. Changes to overlay button scaling and sensitivity.<br>
+5. Other general dynamic end card related bug fixes.
+
+===
 **2.0.0 (Beta) – June 6, 2013** <br>
 1. AdColony Android now requires OS 2.2 or higher.<br>
 2. AdColonyVideoListener has been renamed to AdColonyAdListener.<br>
