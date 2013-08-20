@@ -1,3 +1,7 @@
+**2.0.3 (Beta) - In QA**<br>
+1. Dynamic end card related WebView bug fix.
+
+===
 **2.0.2 (Beta) - August 9, 2013**<br>
 1. Ad specific play limits now function off of starts rather than completes.<br>
 2. General bug fixes.
