@@ -75,11 +75,11 @@ AdColonyV4VCAd ad = new AdColonyV4VCAd(v4vc_zone_id).withConfirmationDialog().sh
 ```
 To use only post-popups, your show method call would look like this:
 ```java
-AdColonyV4VC ad = new AdColonyV4VCAd(v4vc_zone_id).withResultsDialog().show();
+AdColonyV4VCAd ad = new AdColonyV4VCAd(v4vc_zone_id).withResultsDialog().show();
 ```
 And the following would be your show method call if you want to use both dialogs:
 ```java
-AdColonyV4VC ad = new AdColonyV4VCAd(v4vc_zone_id).withConfirmationDialog().withResultsDialog().show();
+AdColonyV4VCAd ad = new AdColonyV4VCAd(v4vc_zone_id).withConfirmationDialog().withResultsDialog().show();
 ```
 
 ===
