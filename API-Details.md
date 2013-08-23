@@ -315,6 +315,7 @@ The value that this method returns may not be valid if a successful ad config ha
 [`onAdColonyAdAttemptFinished( ad:AdColonyAd )`](API-Details#onadcolonyadattemptfinished-adcolonyad-ad-)<br>
 ####Invoke on Returned AdColonyAd Object####
 [`shown() : boolean`](API-Details#shown)<br>
+[`notShown() : boolean`](API-Details#notshown)<br>
 [`canceled() : boolean`](API-Details#canceled)<br>
 [`noFill() : boolean`](API-Details#nofill)<br>
 [`skipped() : boolean`](API-Details#skipped)
@@ -350,6 +351,13 @@ This method **is** called if the video ad fails to play.
 When invoked on the AdColonyAd object returned from [onAdColonyAdAttemptFinished](API-Details#onadcolonyadattemptfinished-adcolonyad-ad-), this method will return true if the ad was successfully shown.
 ```java
 public boolean shown()
+```
+
+---
+####notShown()####
+When invoked on the AdColonyAd object returned from [onAdColonyAdAttemptFinished](API-Details#onadcolonyadattemptfinished-adcolonyad-ad-), this method will return true if the ad was **not** successfully shown.
+```java
+public boolean notShown()
 ```
 
 ---
