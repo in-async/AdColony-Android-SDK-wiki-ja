@@ -144,7 +144,7 @@ static public String statusForZone( String zone_id )
 * *zone_id*  
   * The zone id you wish to check the status of.
 
-**Return Value**
+**Returns**
 * "invalid" - There is no such zone.
 * "off" - Zone is turned off in the [Control Panel](http://clients.adcolony.com).
 * "loading" - One or more resources are still loading.
