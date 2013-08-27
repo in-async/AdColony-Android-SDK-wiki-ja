@@ -17,7 +17,7 @@
 [`removeV4VCListener( listener:AdColonyV4VCListener )`](API-Details#removev4vclistener-adcolonyv4vclistener-listener-)<br>
 [`isTablet() : boolean`](API-Details#istablet)<br>
 [`pause()`](API-Details#pause)<br>
-[`resume( activity:Activity )`](API-Details#resume-activity-activity-)
+[`resume( activity:Activity )`](API-Details#resume-activity-activity-)<br>
 [`statusForZone( zone_id:String ) : String`](API-Details#statusforzone-string-zone_id-)
 
 ###Class Methods###
@@ -146,11 +146,11 @@ static public String statusForZone( String zone_id )
 
 **Discussion**  
 Returns the following:<br>
-* "invalid"
-* * There is no such zone.
-*
-
-
+* "invalid" - There is no such zone.
+* "off" - Zone is turned off in the [Control Panel](http://clients.adcolony.com).
+* "loading" - One or more resources are still loading.
+* "active" - The zone is ready to show an ad.
+* "unknown" - No ad config has been received.
 
 ###AdColonyVideoAd Class Reference###
 **Note:**
