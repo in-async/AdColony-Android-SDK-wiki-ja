@@ -17,7 +17,7 @@ You can do this by pasting the following lines before the \<application...> tag:
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
 <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 ```
-In order for our Dynamic End Cards to perform optimally, we suggest enabling hardware acceleration by adding the following line to your application tag in your manifest:<br>
+In order for our Dynamic End Cards to perform optimally, please enable hardware acceleration by adding the following line to your application tag in your manifest:<br>
 ```xml
 android:hardwareAccelerated="true"
 ```
