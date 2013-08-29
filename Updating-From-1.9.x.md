@@ -12,7 +12,7 @@ through parameters. For example, in 1.9.x call “ad.show(listener)” is now �
 slightly:
   * `getV4VCName():String --­> getRewardName():String` 
   * `getV4VCAmount():int --­> getRewardAmount():int`
-10. The following application tag should be added to your AndroidManifest.xml:
+10. The following should be added to your application tag in your AndroidManifest.xml:
 ```xml
 android:hardwareAccelerated="true"
 ```
