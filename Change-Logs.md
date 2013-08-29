@@ -1,4 +1,4 @@
-**2.0.3 (Beta) - August 20, 2013**<br>
+**2.0.3 - August 20, 2013**<br>
 1. Dynamic end card related WebView bug fixes.
 
 ===
