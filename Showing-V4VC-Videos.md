@@ -42,7 +42,7 @@ Or
 AdColonyV4VCAd ad = new AdColonyV4VCAd(v4vc_zone_id).show();
 ```
 Where v4vc_zone_id is a String matching your V4VC enabled zone gathered from the dashboard/included in your configure call.<br><br>
-**Note:** this is a minimal example, please see below and make note of the [[API Details]] page for more advanced usage.
+**Note:** this is a minimal example, please see below and make note of the [[API Details]] page or below for more advanced usage.
 
 ===
 ###Advanced Usage###
