@@ -7,7 +7,7 @@
 5. Class AdColonyVideoAd has been refactored into two classes: “AdColonyVideoAd” for
 standard ads and “AdColonyV4VCAd” for virtual currency ads.
 6. Optional ad settings are now assigned through separate chainable calls rather than
-through parameters. For example, in 1.9.x call “ad.show(listener)” is now “ad.withListener(listener).show()”. For more details see [[API-Details]].
+through parameters. For example, in 1.9.x call “ad.show(listener)” is now “ad.withListener(listener).show()”. For more details see [[API Details]].
 8. The signatures of virtual currency query methods in AdColonyV4VCAd have changed
 slightly:
   * `getV4VCName():String --­> getRewardName():String` 
