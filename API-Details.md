@@ -18,7 +18,6 @@
 [`isTablet() : boolean`](API-Details#istablet)<br>
 [`pause()`](API-Details#pause)<br>
 [`resume( activity:Activity )`](API-Details#resume-activity-activity-)<br>
-[`statusForZone( zone_id:String ) : String`](API-Details#statusforzone-string-zone_id-)
 
 ###Class Methods###
 
@@ -133,23 +132,6 @@ static public void resume(Activity activity)
 **Parameters**   
 * *activity*  
   * Your Activity context.
-
----
-####statusForZone( String zone_id )####
-Returns a String representing the status of the given zone.
-```java
-static public String statusForZone( String zone_id )
-```
-**Parameters**   
-* *zone_id*  
-  * The zone id you wish to check the status of.
-
-**Returns**
-* "invalid" - There is no such zone.
-* "off" - Zone is turned off in the [Control Panel](http://clients.adcolony.com).
-* "loading" - One or more resources are still loading.
-* "active" - The zone is ready to show an ad.
-* "unknown" - No ad config has been received.
 
 ###AdColonyVideoAd Class Reference###
 **Note:**
