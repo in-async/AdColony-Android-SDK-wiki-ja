@@ -39,4 +39,4 @@ android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
 
 ===
 ####Step 3: Gather Information From Your AdColony Account####
-Log in to the AdColony [Control Panel](http://clients.adcolony.com) and create an app and desired zones on the website by following the instructions provided there. Then retrieve your app ID and your corresponding zone IDs for integration (see [[Showing Interstitial Videos]] and [[Showing V4VC Videos]]).
+Log in to the AdColony [Control Panel](http://clients.adcolony.com) and create an app and desired zones on the website by following the instructions provided there (Please refer to "[Setting up Apps and Zones](http://support.adcolony.com/customer/portal/articles/761987-setting-up-apps-zones)" for help). Then retrieve your app ID and your corresponding zone IDs for integration (see [[Showing Interstitial Videos]] and [[Showing V4VC Videos]]).
