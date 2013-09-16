@@ -32,7 +32,7 @@ static public void configure( Activity activity,String client_options, String ap
 * *client_options*
   * A String containing your app version, origin store, and optionally a 'skippable' parameter to enable skippable ads in your app (example: “version=1.1,store:google,skippable”). **Note: no publisher earnings or V4VC rewards will occur if an ad is canceled using this method.**
 * *app_id*  
-  * The AdColony app ID for your app. This can be created and retrieved at the [Control Panel](http://clients.adcolony.com)  
+  * The AdColony app ID for your app. This can be created and retrieved at the [Control Panel](http://clients.adcolony.com).  
 * *zone_ids*  
   * Any number ( >= 1 ) of AdColony zone ID strings (an array of Strings is also acceptable). AdColony zone IDs can be created and retrieved at the [Control Panel](http://clients.adcolony.com). If null or inaccurate, your app will be unable to play ads and AdColony will only provide limited reporting and install tracking functionality.  
 
