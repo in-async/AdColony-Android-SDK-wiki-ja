@@ -1,4 +1,3 @@
-**Special Note:** If your application targets API 18 and you have ProGuard enabled, you will not be able to export a signed APK unless you add the following line to your proguard-project.txt file:`-dontwarn android.webkit.**`<br><br>
 There are 3 quick steps that must be taken prior to integrating AdColony video ads into your source code:
 ####Step 1: Insert Library####
 * Place adcolony.jar in your project’s "libs" folder.
