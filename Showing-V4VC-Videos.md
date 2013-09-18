@@ -12,7 +12,7 @@ Next, in your **main Activity's** onCreate method, call configure like so:
 AdColony.configure(this, client_options, app_id, zone_ids);
 ```
 Replace client_options with your client options String (e.g. "version:2.1,store:google" - see [[API Details]] for more information on this) and app_id/zone_ids with your app and zone ids gathered from the [Control Panel](http://clients.adcolony.com) (please refer to "[Setting up Apps and Zones](http://support.adcolony.com/customer/portal/articles/761987-setting-up-apps-zones)" for help). Make sure the zone you are using to create your AdColonyV4VCAd object is V4VC enabled.<br><br>
-**Note:** you should only ever call configure **once** and make sure it is done in your **main Activity's** onCreate method.
+**Note:** you should only ever call configure **once** and make sure it is done in your **main Activity's** onCreate method. It is important that the Activity referenced by the first configure parameter is not destroyed throughout your application's life-cycle.
 
 ===
 ####Step 2: Pause and Resume####
