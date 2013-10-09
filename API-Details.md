@@ -22,7 +22,8 @@
 ###Class Methods###
 
 ####configure( Activity activity, String client_options, String app_id, String... zone_ids )####
-Configures AdColony specifically for your app; required for usage of the rest of the API.
+Configures AdColony specifically for your app; required for usage of the rest of the API.<br>
+**NOTE:** Please ensure that this method is only called once.
 ```java
 static public void configure( Activity activity,String client_options, String app_id, String... zone_ids )
 ```
