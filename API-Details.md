@@ -400,14 +400,15 @@ public void onAdColonyV4VCReward( AdColonyV4VCReward reward)
 * *reward*  
   * The AdColonyV4VCReward object that contains information about the completed V4VC reward event.
 
+**Discussion**<br>
+In the event of a various network problems, a currency transaction will not be instantaneous, which can result in this callback being executed by AdColony at any point during your application.
+
 ---
 ####success()####
 When invoked on the returned [AdColonyV4VCReward](API-Details#onadcolonyv4vcreward-adcolonyv4vcreward-reward-) object, this method will return true if the V4VC reward event has occurred successfully. 
 ```java
 public boolean success()
 ```
-**Discussion**<br>
-In the event of a various network problems, a currency transaction will not be instantaneous, which can result in this callback being executed by AdColony at any point during your application.
 
 ---
 ####name()####
