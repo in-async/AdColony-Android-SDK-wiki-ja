@@ -35,14 +35,15 @@ public void onResume()
 ####Step 3: Create AdColonyV4VCAd Object and Call Show####
 To show an AdColony V4VC video advertisement, create an AdColonyV4VCAd object and call show on it as follows:
 ```java
-AdColonyV4VCAd ad = new AdColonyV4VCAd();
+AdColonyV4VCAd ad = new AdColonyV4VCAd(v4vc_zone_id);
 ad.show();
 ```
 Or
 ```java
-AdColonyV4VCAd ad = new AdColonyV4VCAd(v4vc_zone_id);
+AdColonyV4VCAd ad = new AdColonyV4VCAd();
 ad.show();
 ```
+
 Where v4vc_zone_id is a String matching your V4VC enabled zone gathered from the dashboard/included in your configure call.<br><br>
 **Note:** this is a minimal example, please see below and make note of the [[API Details]] page or below for more advanced usage.
 
