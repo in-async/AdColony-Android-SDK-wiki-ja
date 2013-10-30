@@ -101,7 +101,7 @@ You must make your URL respond appropriately to the AdColony callback. The forma
 
 _[http://www .yourserver.com/anypath/callback_url.php]?id=[transaction id]&uid=[user id]&amount=[currency amount to award]&currency=[name of currency to award]&verifier=[security value]_<br><br>
 
-If your application provides a custom ID to AdColony, you will need to add “&custom_id=[CUSTOM_ID]” to your zone’s callback URL or it will not be provided to your server.<br><br>
+If your application provides a custom ID to AdColony, you will need to add “&custom_id=[CUSTOM_ID]” to the end your zone’s callback URL or it will not be provided to your server.<br><br>
 
 It is not necessary to use PHP for your callback URL. You can use any server side language that supports an MD5 hash check to respond to URL requests on your server.<br><br>
 
