@@ -16,7 +16,7 @@ Replace client_options with your client options String (e.g. "version:2.1,store:
 
 ===
 ####Step 2: Pause and Resume####
-Override your Activity’s onPause() and onResume() methods to call corresponding AdColony methods as follows:
+Override each of your Activities' onPause() and onResume() methods to call corresponding AdColony methods as follows:
 ```java
 public void onPause() 
 {
