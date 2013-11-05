@@ -491,5 +491,5 @@ public void onAdColonyAdAvailabilityChange(boolean available, String zone_id)
 * *zone_id*
   * The zone id in which ads are now available/unavailable.<br>
 
-**Discussion**
+**Discussion**<br>
 You can see an example of this listener in use in our Demo applications included in the SDK build distribution.
