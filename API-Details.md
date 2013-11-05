@@ -22,6 +22,7 @@
 [`pause()`](API-Details#pause)<br>
 [`resume( activity:Activity )`](API-Details#resume-activity-activity-)<br>
 [`statusForZone( zone_id:String ) : String`](API-Details#statusforzone-string-zone_id-)<br>
+[`cancelVideo()`](API-Details#cancelvideo)<br>
 
 ###Class Methods###
 
@@ -179,6 +180,15 @@ static public String statusForZone(String zone_id)
 * "off"     - The zone is disabled.
 * "loading" - The zone is enabled, but does not have any ads available to be played at this point.
 * "active"  - The zone is enabled and has ads ready to be played.
+
+---
+####cancelVideo()####
+Cancels the video ad, returning control to your application.
+```java
+static public void cancelVideo()
+```
+**Discussion**<br>
+A video cancelled using this method will not count as a completed video view.
 
 
 
