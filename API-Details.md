@@ -478,9 +478,9 @@ public int amount()
 
 ###AdColonyAdAvailabilityListener Interface Reference###
 ####Implement the Following####
-[`onAdColonyAdAvailabilityChange( available:boolean, zone_id:String )`](API-Details#onadcolonyv4vcreward-adcolonyv4vcreward-reward-)<br>
+[`onAdColonyAdAvailabilityChange( available:boolean, zone_id:String )`](API-Details#onadcolonyadavailabilitychange-boolean-available-string-zone_id-)<br>
 ###Methods###
-####onAdColonyAdAvailabilityChange(boolean available, String zone_id)####
+####onAdColonyAdAvailabilityChange( boolean available, String zone_id )####
 This method will be called when the ad availability of a zone changes (either from available to unavailable or from unavailable to available).
 ```java
 public void onAdColonyAdAvailabilityChange(boolean available, String zone_id)
