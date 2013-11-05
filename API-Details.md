@@ -2,7 +2,8 @@
 [AdColonyVideoAd Class Reference](API-Details#adcolonyvideoad-class-reference)<br> 
 [AdColonyV4VCAd Class Reference](API-Details#adcolonyv4vcad-class-reference)<br>
 [AdColonyAdListener Interface Reference](API-Details#adcolonyadlistener-interface-reference)<br>
-[AdColonyV4VCListener Interface Reference](API-Details#adcolonyv4vclistener-interface-reference)
+[AdColonyV4VCListener Interface Reference](API-Details#adcolonyv4vclistener-interface-reference)<br>
+[AdColonyAdAvailabilityListener Interface Reference](API-Details#adcolonyadavailabilitylistener-interface-reference)
 
 ==     
 ###AdColony Class Reference###
@@ -15,6 +16,8 @@
 [`getCustomID() : String`](API-Details#getcustomid)<br>
 [`addV4VCListener( listener:AdColonyV4VCListener )`](API-Details#addv4vclistener-adcolonyv4vclistener-listener-)<br>
 [`removeV4VCListener( listener:AdColonyV4VCListener )`](API-Details#removev4vclistener-adcolonyv4vclistener-listener-)<br>
+[`addAdAvailabilityListener( listener:AdColonyAdAvailabilityListener )`](API-Details#addadavailabilitylistener-adcolonyadavailabilitylistener-listener-)<br>
+[`removeAdAvailabilityListener( listener:AdColonyAdAvailabilityListener )`](API-Details#removeadavailabilitylistener-adcolonyadavailabilitylistener-listener-)<br>
 [`isTablet() : boolean`](API-Details#istablet)<br>
 [`pause()`](API-Details#pause)<br>
 [`resume( activity:Activity )`](API-Details#resume-activity-activity-)<br>
@@ -109,6 +112,32 @@ static public void removeV4VCListener( AdColonyV4VCListener listener )
 
 **Discussion**  
 Further discussion on how to implement a V4VCListener can be found [here](API-Details#adcolonyv4vclistener-interface-reference)
+
+---
+####addAdAvailabilityListener( AdColonyAdAvailabilityListener listener )####
+Registers a listener to be notified changes in a zone's ad availability.
+```java
+static public void addAdAvailabilityListener( AdColonyAdAvailabilityListener listener )
+```
+**Parameters**   
+* *listener*  
+  * The AdColonyAdAvailabilityListener to be added.
+
+**Discussion**  
+Further discussion on how to implement an AdAvailabilityListener can be found [here](API-Details#adcolonyadavailabilitylistener-interface-reference)
+
+---
+####removeAdAvailabilityListener( AdColonyAdAvailabilityListener listener )####
+AdColony will stop alerting this listener when ads become available or unavailable for a given zone.
+```java
+static public void removeAdAvailabilityListener( AdColonyAdAvailabilityListener listener )
+```
+**Parameters**   
+* *listener*  
+  * The AdColonyAdAvailabilityListener to remove.
+
+**Discussion**  
+Further discussion on how to implement an AdAvailabilityListener can be found [here](API-Details#adcolonyadavailabilitylistener-interface-reference)
 
 ---
 ####isTablet()####
@@ -444,3 +473,11 @@ When invoked on the returned [AdColonyV4VCReward](API-Details#onadcolonyv4vcrewa
 ```java
 public int amount()
 ```
+
+
+
+###AdColonyAdAvailabilityListener Interface Reference###
+####Implement the Following####
+[`onAdColonyAdAvailabilityChange( available:boolean, zone_id:String )`](API-Details#onadcolonyv4vcreward-adcolonyv4vcreward-reward-)<br>
+###Methods###
+####onAdColonyAdAvailabilityChange(boolean available, String zone_id)####
