@@ -481,3 +481,13 @@ public int amount()
 [`onAdColonyAdAvailabilityChange( available:boolean, zone_id:String )`](API-Details#onadcolonyv4vcreward-adcolonyv4vcreward-reward-)<br>
 ###Methods###
 ####onAdColonyAdAvailabilityChange(boolean available, String zone_id)####
+This method will be called when the ad availability of a zone changes (either from available to unavailable or from unavailable to available).
+```java
+public void onAdColonyAdAvailabilityChange(boolean available, String zone_id)
+```
+**Parameters**   
+* *available*  
+  * A boolean representing whether or not ads are now available (true) or ads are now not available (false).
+* *zone_id*
+  * The zone id in which ads are now available/unavailable.
+
