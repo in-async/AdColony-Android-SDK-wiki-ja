@@ -1,5 +1,5 @@
 **2.0.4 - October 21, 2013**<br>
-1. Added AdColonyAdAvailabilityListener to the API (See [API-Details] or our included demo projects for more info).<br>
+1. Added AdColonyAdAvailabilityListener to the API (See [[API-Details]] or our included demo projects for more info).<br>
 2. 
 
 ===
