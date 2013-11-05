@@ -1,3 +1,8 @@
+**2.0.4 - October 21, 2013**<br>
+1. Added AdColonyAdAvailabilityListener to the API (See [API-Details] or our included demo projects for more info).<br>
+2. 
+
+===
 **2.0.3 - August 20, 2013**<br>
 1. Dynamic end card related WebView bug fixes.
 
