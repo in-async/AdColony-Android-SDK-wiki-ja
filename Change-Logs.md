@@ -1,7 +1,7 @@
 **2.0.4 - October 21, 2013**<br>
 1. Added AdColonyAdAvailabilityListener to the API (See [[API-Details]] or our included demo projects for more info).<br>
-2. Added statusForZone(String zone_id) method to the API.<br>
-3. Added cancelVideo() method to the API.<br>
+2. Added statusForZone method to the API.<br>
+3. Added cancelVideo method to the API.<br>
 4. Removed third-party OpenUDID library. If you are using a server-side V4VC solution, please keep in mind that this will no longer be passed along as a parameter and should no longer be included in your verification process.<br>
 5. AdColonyAdAvailabilityListeners and AdColonyV4VCListeners are now reset on AdColony.configure.<br>
 6. Adjusted asset download order to decrease time for first ad to become available. <br>
