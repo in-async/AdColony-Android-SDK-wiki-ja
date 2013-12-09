@@ -1,3 +1,7 @@
+**2.0.5 - December 5, 2013**<br>
+1. General bug fixes.
+
+===
 **2.0.4 - October 21, 2013**<br>
 1. Added AdColonyAdAvailabilityListener to the API (See [[API Details]] or our included demo projects for more info).<br>
 2. Added statusForZone method to the API.<br>
