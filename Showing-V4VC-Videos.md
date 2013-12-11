@@ -107,51 +107,56 @@ It is not necessary to use PHP for your callback URL. You can use any server sid
 
 For your convenience, the following PHP with MySQL sample code illustrates how to access the URL parameters, perform an MD5 hash check, check for duplicate transactions, and how to respond appropriately from the URL:
 ```php
-$MY_SECRET_KEY="Thiscomesfromadcolony.com";
+<?php
 
-$trans_id=mysql_real_escape_string($_GET['id']); 
-$dev_id=mysql_real_escape_string($_GET['uid']); 
-$amt=mysql_real_escape_string($_GET['amount']); 
-$currency=mysql_real_escape_string($_GET['currency']); 
-$verifier=mysql_real_escape_string($_GET['verifier']);
+    $MY_SECRET_KEY="Thiscomesfromadcolony.com";
 
-//verify hash 
-$test_string="".$trans_id.$dev_id.$amt.$currency.$MY_SECRET_KEY; 
-$test_result=md5($test_string);
-if($test_result!=$verifier)
-{
-  echo"vc_decline";
-  die; 
-}
+    $trans_id=mysql_real_escape_string($_GET['id']); 
+    $dev_id=mysql_real_escape_string($_GET['uid']); 
+    $amt=mysql_real_escape_string($_GET['amount']); 
+    $currency=mysql_real_escape_string($_GET['currency']); 
+    $verifier=mysql_real_escape_string($_GET['verifier']);
 
-//check for a valid user 
-$user_id=//get your internal user id from the device id here 
-if(!$user_id)
-{
-  echo"vc_decline";
-  die; 
-}
-//insert the new transaction 
-$query="INSERT INTO AdColony_Transactions(id,amount,name,user_id,time)".
-  "VALUES($trans_id,$amt,'$currency',$user_id,UTC_TIMESTAMP())"; 
-$result=mysql_query($query);
-if(!$result)
-{
-  //check for duplicate on insertion 
-  if(mysql_errno()==1062)
-  {
+    //verify hash 
+    $test_string="".$trans_id.$dev_id.$amt.$currency.$MY_SECRET_KEY; 
+    $test_result=md5($test_string);
+    if($test_result!=$verifier)
+    {
+      echo"vc_decline";
+      die; 
+    }
+
+    //check for a valid user 
+    $user_id=//get your internal user id from the device id here 
+    if(!$user_id)
+    {
+      echo"vc_decline";
+      die; 
+    }
+
+    //insert the new transaction 
+    $query="INSERT INTO AdColony_Transactions(id,amount,name,user_id,time)".
+      "VALUES($trans_id,$amt,'$currency',$user_id,UTC_TIMESTAMP())"; 
+    $result=mysql_query($query);
+    if(!$result)
+    {
+      //check for duplicate on insertion 
+      if(mysql_errno()==1062)
+      {
+        echo"vc_success";
+        die; 
+      }
+      //otherwise insert failed and AdColony should retry later 
+      else
+      {
+        echo"mysql error number".mysql_errno();
+        die; 
+      }
+    }
+    //award the user the appropriate amount and type of currency here 
     echo"vc_success";
-    die; 
-  }
-  //otherwise insert failed and AdColony should retry later 
-  else
-  {
-    echo"mysql error number".mysql_errno();
-    die; 
-  }
-}
-//award the user the appropriate amount and type of currency here 
-echo"vc_success";
+
+?>
 ```
 The MySQL database table referenced by the previous PHP sample can be created using the following code:
 ```mysql
