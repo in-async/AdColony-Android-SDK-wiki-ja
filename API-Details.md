@@ -35,7 +35,7 @@ static public void configure( Activity activity,String client_options, String ap
 * *activity*
   * Your Activity context (i.e. 'this').
 * *client_options*
-  * A String containing your app version, origin store, and optionally a 'skippable' parameter to enable skippable ads in your app (example: “version=1.1,store:google,skippable” - replace 'google). **Note: no publisher earnings or V4VC rewards will occur if an ad is canceled using this method.** Please note that if you are advertising on an Amazon app you will need to replace 'google' with 'amazon' in the client_options String.
+  * A String containing your app version, origin store, and optionally a 'skippable' parameter to enable skippable ads in your app (example: “version=1.1,store:google,skippable” - replace 'google). **Note: no publisher earnings or V4VC rewards will occur if an ad is canceled using this method.** Please note that if you are integrating into an Amazon app you will need to replace 'google' with 'amazon' in the client_options String.
 * *app_id*  
   * The AdColony app ID for your app. This can be created and retrieved at the [Control Panel](http://clients.adcolony.com).  
 * *zone_ids*  
