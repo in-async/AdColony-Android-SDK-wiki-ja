@@ -156,7 +156,7 @@ static public void pause()
 
 ---
 ####resume( Activity activity )####
-Call this method from your Activity’s onPause() method.
+Call this method from your Activity’s onResume() method.
 ```java
 static public void resume(Activity activity)
 ```
