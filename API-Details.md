@@ -35,7 +35,7 @@ static public void configure( Activity activity,String client_options, String ap
 * *activity*
   * Your Activity context (i.e. 'this').
 * *client_options*
-  * A String containing your app version, the origin store, and an optional "skippable" String that will enable users to cancel the ad experience using the back button. Publisher earnings will not occur for ads that are cancelled using this method (examples: “version=1.1,store:google” or "version=2.23,store:amazon,skippable"). Please note that if you are integrating into an Amazon app you will need to replace 'google' with 'amazon' in the client_options String.
+  * A String containing your app version, the origin store, and an optional "skippable" String that will enable users to cancel the ad experience using the back button. Publisher earnings will not occur for ads that are cancelled using this method (examples: “version:1.1,store:google” or "version:2.23,store:amazon,skippable"). Please note that if you are integrating into an Amazon app you will need to replace 'google' with 'amazon' in the client_options String.
 * *app_id*  
   * The AdColony app ID for your app. This can be created and retrieved at the [Control Panel](http://clients.adcolony.com).  
 * *zone_ids*  
