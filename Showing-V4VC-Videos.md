@@ -173,7 +173,7 @@ After checking for duplicate transactions, you should reward your user the speci
 
 ===
 ####Step 3####
-You must ensure your callback returns the appropriate string to the AdColony server based on the result of the transaction:<br>
+You must ensure your server's response is appropriate based on the result of the transaction:<br>
 * "vc_success"
   * Transaction finished. Return this when the callback is received and user credited.
 * "vc_decline"
