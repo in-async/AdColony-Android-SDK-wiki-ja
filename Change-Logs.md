@@ -1,3 +1,8 @@
+**2.0.6 - January 15, 2014**<br>
+1. API 19 WebView compliance.
+2. General bug fixes.
+
+===
 **2.0.5 - December 5, 2013**<br>
 1. General bug fixes.
 
