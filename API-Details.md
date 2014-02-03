@@ -196,15 +196,15 @@ A video cancelled using this method will not count as a completed video view.
 
 ###AdColonyVideoAd Class Reference###
 **Note:**
-This section (minus the constructors) applies to both AdColonyVideoAd and AdColonyV4VCAd objects. Click [here](API-Details#adcolonyv4vcad-class-reference) for information specific to AdColonyV4VCAd objects.
+This section (minus the constructors) applies to both AdColonyVideoAd and AdColonyV4VCAd objects. Click [here](API-Details#wiki-adcolonyv4vcad-class-reference) for information specific to AdColonyV4VCAd objects.
 ####Creating an AdColonyVideoAd Object####
-[`AdColonyVideoAd()`](API-Details#adcolonyvideoad)<br>
-[`AdColonyVideoAd( zone_id:String )`](API-Details#adcolonyvideoad-string-zone_id-)<br>
+[`AdColonyVideoAd()`](API-Details#wiki-adcolonyvideoad)<br>
+[`AdColonyVideoAd( zone_id:String )`](API-Details#wiki-adcolonyvideoad-string-zone_id-)<br>
 ####Interacting With an AdColonyVideoAd Object####
-[`withListener( listener:AdColonyAdListener ) : AdColonyVideoAd`](API-Details#withlistener-adcolonyadlistener-listener-)<br>
-[`isReady() : boolean`](API-Details#isready)<br>
-[`show()`](API-Details#show)<br>
-[`getAvailableViews() : int`](API-Details#getavailableviews)
+[`withListener( listener:AdColonyAdListener ) : AdColonyVideoAd`](API-Details#wiki-withlistener-adcolonyadlistener-listener-)<br>
+[`isReady() : boolean`](API-Details#wiki-isready)<br>
+[`show()`](API-Details#wiki-show)<br>
+[`getAvailableViews() : int`](API-Details#wiki-getavailableviews)
 
 ###Instance Methods###
 
