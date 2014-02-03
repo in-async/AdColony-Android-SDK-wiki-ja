@@ -1,9 +1,9 @@
-[AdColony Class Reference](API-Details#adcolony-class-reference)<br>
-[AdColonyVideoAd Class Reference](API-Details#adcolonyvideoad-class-reference)<br> 
-[AdColonyV4VCAd Class Reference](API-Details#adcolonyv4vcad-class-reference)<br>
-[AdColonyAdListener Interface Reference](API-Details#adcolonyadlistener-interface-reference)<br>
-[AdColonyV4VCListener Interface Reference](API-Details#adcolonyv4vclistener-interface-reference)<br>
-[AdColonyAdAvailabilityListener Interface Reference](API-Details#adcolonyadavailabilitylistener-interface-reference)
+[AdColony Class Reference](API-Details#wiki-adcolony-class-reference)<br>
+[AdColonyVideoAd Class Reference](API-Details#wiki-adcolonyvideoad-class-reference)<br> 
+[AdColonyV4VCAd Class Reference](API-Details#wiki-adcolonyv4vcad-class-reference)<br>
+[AdColonyAdListener Interface Reference](API-Details#wiki-adcolonyadlistener-interface-reference)<br>
+[AdColonyV4VCListener Interface Reference](API-Details#wiki-adcolonyv4vclistener-interface-reference)<br>
+[AdColonyAdAvailabilityListener Interface Reference](API-Details#wiki-adcolonyadavailabilitylistener-interface-reference)
 
 ==     
 ###AdColony Class Reference###
