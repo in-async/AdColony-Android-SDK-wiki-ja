@@ -1,6 +1,6 @@
 AdColony V4VC (Videos-for-Virtual-Currency) is a system built on top of our [[interstitial ads|Showing Interstitial Videos]] that allows you to reward your app's users with the app's virtual currency upon completion of an ad. AdColony V4VC does not keep track of your users' currency balances for you; it provides notifications to you when a user needs to be credited with a reward.<br><br>
-[Basics](Showing-V4VC-Videos#basics)<br>
-[Advanced Usage](Showing-V4VC-Videos#advanced-usage)
+[Basics](Showing-V4VC-Videos#wiki-basics)<br>
+[Advanced Usage](Showing-V4VC-Videos#wiki-advanced-usage)
 ###Basics###
 ####Step 1: Configure AdColony####
 First, make sure you have imported the AdColony library:
@@ -49,9 +49,9 @@ Where v4vc_zone_id is a String matching your V4VC enabled zone gathered from the
 
 ===
 ###Advanced Usage###
-[AdColonyV4VCListener](Showing-V4VC-Videos#adcolonyv4vclistener)<br>
-[Pre and Post-Popups](Showing-V4VC-Videos#pre-and-post-popups)<br>
-[Server-Side Rewards](Showing-V4VC-Videos#server-side-rewards)
+[AdColonyV4VCListener](Showing-V4VC-Videos#wiki-adcolonyv4vclistener)<br>
+[Pre and Post-Popups](Showing-V4VC-Videos#wiki-pre-and-post-popups)<br>
+[Server-Side Rewards](Showing-V4VC-Videos#wiki-server-side-rewards)
 ####AdColonyV4VCListener####
 After a V4VC video plays AdColony will inform your app of the results. Note that a single AdColonyV4VCListener  should only be added once throughout your application's life cycle. Create a class or AdColonyV4VCListener object that implements the AdColonyV4VCListener interface and add the listener to AdColony immediately after calling configure:
 ```java
