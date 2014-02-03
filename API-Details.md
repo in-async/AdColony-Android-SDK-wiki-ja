@@ -10,19 +10,19 @@
 ####Configuring AdColony####
 [`configure( activity:Activity, client_options:String, app_id:String, zone_ids:String...)`](API-Details#configure-activity-activity-string-client_options-string-app_id-string-zone_ids-)
 ####Other AdColony Utilities####
-[`setDeviceID( id:String )`](API-Details#setdeviceid-string-id-)<br>
-[`setCustomID( id:String )`](API-Details#setcustomid-string-id-)<br>
-[`getDeviceID() : String`](API-Details#getdeviceid)<br>
-[`getCustomID() : String`](API-Details#getcustomid)<br>
-[`addV4VCListener( listener:AdColonyV4VCListener )`](API-Details#addv4vclistener-adcolonyv4vclistener-listener-)<br>
-[`removeV4VCListener( listener:AdColonyV4VCListener )`](API-Details#removev4vclistener-adcolonyv4vclistener-listener-)<br>
-[`addAdAvailabilityListener( listener:AdColonyAdAvailabilityListener )`](API-Details#addadavailabilitylistener-adcolonyadavailabilitylistener-listener-)<br>
-[`removeAdAvailabilityListener( listener:AdColonyAdAvailabilityListener )`](API-Details#removeadavailabilitylistener-adcolonyadavailabilitylistener-listener-)<br>
-[`isTablet() : boolean`](API-Details#istablet)<br>
-[`pause()`](API-Details#pause)<br>
-[`resume( activity:Activity )`](API-Details#resume-activity-activity-)<br>
-[`statusForZone( zone_id:String ) : String`](API-Details#statusforzone-string-zone_id-)<br>
-[`cancelVideo()`](API-Details#cancelvideo)<br>
+[`setDeviceID( id:String )`](API-Details#wiki-setdeviceid-string-id-)<br>
+[`setCustomID( id:String )`](API-Details#wiki-setcustomid-string-id-)<br>
+[`getDeviceID() : String`](API-Details#wiki-getdeviceid)<br>
+[`getCustomID() : String`](API-Details#wiki-getcustomid)<br>
+[`addV4VCListener( listener:AdColonyV4VCListener )`](API-Details#wiki-addv4vclistener-adcolonyv4vclistener-listener-)<br>
+[`removeV4VCListener( listener:AdColonyV4VCListener )`](API-Details#wiki-removev4vclistener-adcolonyv4vclistener-listener-)<br>
+[`addAdAvailabilityListener( listener:AdColonyAdAvailabilityListener )`](API-Details#wiki-addadavailabilitylistener-adcolonyadavailabilitylistener-listener-)<br>
+[`removeAdAvailabilityListener( listener:AdColonyAdAvailabilityListener )`](API-Details#wiki-removeadavailabilitylistener-adcolonyadavailabilitylistener-listener-)<br>
+[`isTablet() : boolean`](API-Details#wiki-istablet)<br>
+[`pause()`](API-Details#wiki-pause)<br>
+[`resume( activity:Activity )`](API-Details#wiki-resume-activity-activity-)<br>
+[`statusForZone( zone_id:String ) : String`](API-Details#wiki-statusforzone-string-zone_id-)<br>
+[`cancelVideo()`](API-Details#wiki-cancelvideo)<br>
 
 ###Class Methods###
 
@@ -271,17 +271,17 @@ public int getAvailableViews()
 
 ###AdColonyV4VCAd Class Reference###
 **Note:**
-AdColonyV4VCAd objects can be interacted with just as [AdColonyVideoAd objects](API-Details#interacting-with-an-adcolonyvideoad-object) can, with the following additions:
+AdColonyV4VCAd objects can be interacted with just as [AdColonyVideoAd objects](API-Details#wiki-interacting-with-an-adcolonyvideoad-object) can, with the following additions:
 ####Creating an AdColonyV4VCAd Object####
-[`AdColonyV4VCAd()`](API-Details#adcolonyv4vcad)<br>
-[`AdColonyV4VCAd( zone_id:String )`](API-Details#adcolonyv4vcad-string-zone_id-)<br>
+[`AdColonyV4VCAd()`](API-Details#wiki-adcolonyv4vcad)<br>
+[`AdColonyV4VCAd( zone_id:String )`](API-Details#wiki-adcolonyv4vcad-string-zone_id-)<br>
 ####Interacting With an AdColonyV4VCAd Object####
-[`withConfirmationDialog() : AdColonyV4VCAd`](API-Details#withconfirmationdialog)<br>
-[`withResultsDialog() : AdColonyV4VCAd`](API-Details#withresultsdialog)<br>
-[`getRewardName() : String`](API-Details#getrewardname)<br>
-[`getRewardAmount() : int`](API-Details#getrewardamount)<br>
-[`getViewsPerReward() : int`](API-Details#getviewsperreward)<br>
-[`getRemainingViewsUntilReward() : int`](API-Details#getremainingviewsuntilreward)
+[`withConfirmationDialog() : AdColonyV4VCAd`](API-Details#wiki-withconfirmationdialog)<br>
+[`withResultsDialog() : AdColonyV4VCAd`](API-Details#wiki-withresultsdialog)<br>
+[`getRewardName() : String`](API-Details#wiki-getrewardname)<br>
+[`getRewardAmount() : int`](API-Details#wiki-getrewardamount)<br>
+[`getViewsPerReward() : int`](API-Details#wiki-getviewsperreward)<br>
+[`getRemainingViewsUntilReward() : int`](API-Details#wiki-getremainingviewsuntilreward)
 
 ###Instance Methods###
 
@@ -370,14 +370,14 @@ The value that this method returns may not be valid if a successful ad config ha
 
 ###AdColonyAdListener Interface Reference###
 ####Implement the Following####
-[`onAdColonyAdStarted( ad:AdColonyAd )`](API-Details#onadcolonyadstarted-adcolonyad-ad-)<br>
-[`onAdColonyAdAttemptFinished( ad:AdColonyAd )`](API-Details#onadcolonyadattemptfinished-adcolonyad-ad-)<br>
+[`onAdColonyAdStarted( ad:AdColonyAd )`](API-Details#wiki-onadcolonyadstarted-adcolonyad-ad-)<br>
+[`onAdColonyAdAttemptFinished( ad:AdColonyAd )`](API-Details#wiki-onadcolonyadattemptfinished-adcolonyad-ad-)<br>
 ####Invoke on Returned AdColonyAd Object####
-[`shown() : boolean`](API-Details#shown)<br>
-[`notShown() : boolean`](API-Details#notshown)<br>
-[`canceled() : boolean`](API-Details#canceled)<br>
-[`noFill() : boolean`](API-Details#nofill)<br>
-[`skipped() : boolean`](API-Details#skipped)
+[`shown() : boolean`](API-Details#wiki-shown)<br>
+[`notShown() : boolean`](API-Details#wiki-notshown)<br>
+[`canceled() : boolean`](API-Details#wiki-canceled)<br>
+[`noFill() : boolean`](API-Details#wiki-nofill)<br>
+[`skipped() : boolean`](API-Details#wiki-skipped)
 
 ###Methods###
 ####onAdColonyAdStarted( AdColonyAd ad )####
@@ -446,14 +446,14 @@ public boolean skipped()
 
 ###AdColonyV4VCListener Interface Reference###
 ####Implement the Following####
-[`onAdColonyV4VCReward( reward:AdColonyV4VCReward )`](API-Details#onadcolonyv4vcreward-adcolonyv4vcreward-reward-)<br>
+[`onAdColonyV4VCReward( reward:AdColonyV4VCReward )`](API-Details#wiki-onadcolonyv4vcreward-adcolonyv4vcreward-reward-)<br>
 ####Invoke on Returned AdColonyV4VCReward Object####
-[`success() : boolean`](API-Details#success)<br>
-[`name() : String`](API-Details#name)<br>
-[`amount() : int`](API-Details#amount)<br>
+[`success() : boolean`](API-Details#wiki-success)<br>
+[`name() : String`](API-Details#wiki-name)<br>
+[`amount() : int`](API-Details#wiki-amount)<br>
 ###Methods###
 ####onAdColonyV4VCReward( AdColonyV4VCReward reward )####
-This method, when implemented, is called when a V4VC reward is attempted given you have added it to the list of AdColonyV4VCListeners ([see here](API-Details#addv4vclistener-adcolonyv4vclistener-listener-)).
+This method, when implemented, is called when a V4VC reward is attempted given you have added it to the list of AdColonyV4VCListeners ([see here](API-Details#wiki-addv4vclistener-adcolonyv4vclistener-listener-)).
 ```java
 public void onAdColonyV4VCReward( AdColonyV4VCReward reward)
 ```
@@ -466,21 +466,21 @@ In the event of a various network problems, a currency transaction will not be i
 
 ---
 ####success()####
-When invoked on the returned [AdColonyV4VCReward](API-Details#onadcolonyv4vcreward-adcolonyv4vcreward-reward-) object, this method will return true if the V4VC reward event has occurred successfully. 
+When invoked on the returned [AdColonyV4VCReward](API-Details#wiki-onadcolonyv4vcreward-adcolonyv4vcreward-reward-) object, this method will return true if the V4VC reward event has occurred successfully. 
 ```java
 public boolean success()
 ```
 
 ---
 ####name()####
-When invoked on the returned [AdColonyV4VCReward](API-Details#onadcolonyv4vcreward-adcolonyv4vcreward-reward-) object, this method will return the name of the reward as set in the dashboard. 
+When invoked on the returned [AdColonyV4VCReward](API-Details#wiki-onadcolonyv4vcreward-adcolonyv4vcreward-reward-) object, this method will return the name of the reward as set in the dashboard. 
 ```java
 public String name()
 ```
 
 ---
 ####amount()####
-When invoked on the returned [AdColonyV4VCReward](API-Details#onadcolonyv4vcreward-adcolonyv4vcreward-reward-) object, this method will return the amount of the reward awarded as set in the dashboard. 
+When invoked on the returned [AdColonyV4VCReward](API-Details#wiki-onadcolonyv4vcreward-adcolonyv4vcreward-reward-) object, this method will return the amount of the reward awarded as set in the dashboard. 
 ```java
 public int amount()
 ```
@@ -489,7 +489,7 @@ public int amount()
 
 ###AdColonyAdAvailabilityListener Interface Reference###
 ####Implement the Following####
-[`onAdColonyAdAvailabilityChange( available:boolean, zone_id:String )`](API-Details#onadcolonyadavailabilitychange-boolean-available-string-zone_id-)<br>
+[`onAdColonyAdAvailabilityChange( available:boolean, zone_id:String )`](API-Details#wiki-onadcolonyadavailabilitychange-boolean-available-string-zone_id-)<br>
 ###Methods###
 ####onAdColonyAdAvailabilityChange( boolean available, String zone_id )####
 This method will be called when the ad availability of a zone changes (either from available to unavailable or from unavailable to available).
