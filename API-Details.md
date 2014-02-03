@@ -310,7 +310,7 @@ You should create new AdColonyV4VCAd objects every time you wish to play a video
 ####withConfirmationDialog()####
 Enables a pre-­popup dialog to be shown prior to a V4VC video advertisement. Returns the invoked upon AdColonyV4VC object.
 ```java
-public void withConfirmationDialog()
+public AdColonyV4VCAd withConfirmationDialog()
 ```
 **Discussion**  
 You can chain this method together with [show](API-Details#show) as follows:<br>
@@ -322,7 +322,7 @@ AdColonyV4VCAd ad = new AdColonyV4VCAd().withConfirmationDialog().show();
 ####withResultsDialog()####
 Enables a post-­popup dialog to be shown after a V4VC video advertisement.
 ```java
-public void withResultsDialog()
+public AdColonyV4VCAd withResultsDialog()
 ```
 **Discussion**  
 You can chain this method together with [show](API-Details#show) as follows:<br>
