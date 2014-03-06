@@ -163,7 +163,7 @@ static public void resume(Activity activity)
 ```
 **Parameters**   
 * *activity*  
-  * Your Activity context.
+  * Your Activity reference.
 
 ---
 ####statusForZone( String zone_id )####
