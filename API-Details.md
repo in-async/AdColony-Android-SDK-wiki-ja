@@ -462,7 +462,7 @@ public void onAdColonyV4VCReward( AdColonyV4VCReward reward)
   * The AdColonyV4VCReward object that contains information about the completed V4VC reward event.
 
 **Discussion**<br>
-Using a server-side V4VC reward solution, in the event of a various network problems, a currency transaction will not be instantaneous which can result in this callback being executed by AdColony at any point during your application.
+In the event of a various network problems while using a server-side V4VC reward solution, a currency transaction will not be instantaneous which can result in this callback being executed by AdColony at any point during your application.
 
 ---
 ####success()####
