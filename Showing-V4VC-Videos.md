@@ -99,9 +99,9 @@ You must create a URL on your servers to receive the AdColony callback. The call
 ####Step 2####
 You must make your URL respond appropriately to the AdColony callback. The format of the URL that AdColony will call is as follows, where brackets indicate strings that will vary based on your application and the details of the transaction:<br><br>
 
-_[http://www .yourserver.com/anypath/callback_url.php]?id=[transaction id]&uid=[user id]&amount=[currency amount to award]&currency=[name of currency to award]&verifier=[security value]_<br><br>
+[http://www .yourserver.com/anypath/callback_url.php]?id=[ID]&uid=[USER_ID]&zone=[ZONE_ID]&amount=[CURRENCY_AMOUNT]&currency=[CURRENCY_TYPE]&verifier=[HASH]&open_udid=[OPEN_UDID]&udid=[UDID]&odin1=[ODIN1]&mac_sha1=[MAC_SHA1]<br><br>
 
-If your application provides a custom ID to AdColony, you will need to add “&custom_id=[CUSTOM_ID]” to the end your zone’s callback URL or it will not be provided to your server. You will also need to append the custom ID to the end of your test string before hashing and checking against your verifier.<br><br>
+Note that open_udid, udid, odin1, and mac_sha1 will always be empty on Android. If your application provides a custom ID to AdColony, you will need to add “&custom_id=[CUSTOM_ID]” to the end your zone’s callback URL or it will not be provided to your server. You will also need to append the custom ID to the end of your test string before hashing and checking against your verifier.<br><br>
 
 It is not necessary to use PHP for your callback URL. You can use any server side language that supports an MD5 hash check to respond to URL requests on your server.<br><br>
 
