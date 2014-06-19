@@ -78,7 +78,7 @@ Returns a globally unique identifier tied to the current installation of an app.
 static public String getDeviceID()
 ```
 **Discussion**  
-While an appropriate ID is generated automatically when the app is installed, you can also use [setDeviceID](API-Details#setdeviceid-string-id-) to set an ID of your choosing. In either case, make sure that the device ID you use to contact the virtual currency server with is the same device ID that AdColony is using.
+While an appropriate ID is generated automatically when the app is installed, you can also use [setDeviceID](API-Details#setdeviceid-string-id-) to set an ID of your choosing.
 
 ---
 ####getCustomID()####
