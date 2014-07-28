@@ -370,6 +370,9 @@ public int getRemainingViewsUntilReward()
 The value that this method returns may not be valid if a successful ad config has not finished downloading (triggered by [configure](API-Details#configure-activity-activity-string-client_options-string-app_id-string-zone_ids-)).
 
 
+###AdColonyNativeAdView Class Reference###
+
+
 
 ###AdColonyAdListener Interface Reference###
 ####Implement the Following####
