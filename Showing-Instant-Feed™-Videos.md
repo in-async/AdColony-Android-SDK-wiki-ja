@@ -64,6 +64,14 @@ Ensure that your ad placement includes some text (and an optional image) indicat
 
 ===
 ####Step 6: Insert Ad Unit Into Your Layout####
-When you have completed the construction of your ad unit, add it to your layout and it will begin playback once it is rendered on screen.<br><br>
+When you have completed the construction of your ad unit, add it to your layout and it will begin playback once it is rendered on screen.
+
+===
+####Step 7: Removing the Ad Unit####
+When you are completely finished using the ad unit (i.e. replacing it with a new one or otherwise permanently removing from your layout) be sure to call destroy() after removing it:
+```java
+ad.destroy();
+```
+This will remove our internal reference to this object such that the memory can be freed via GC.<br><br>
 
 **Note:** this is a minimal example, please make note of the [[API Details]] and the demo project included in the distribution for more advanced usage.
