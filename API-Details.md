@@ -510,3 +510,9 @@ public void onAdColonyAdAvailabilityChange(boolean available, String zone_id)
 
 **Discussion**<br>
 You can see an example of this listener in use in our Demo applications included in the SDK build distribution.
+
+
+###AdColonyNativeAdListener Interface Reference###
+
+
+###AdColonyNativeAdMutedListener Interface Reference###
