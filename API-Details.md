@@ -375,6 +375,7 @@ The value that this method returns may not be valid if a successful ad config ha
 [`AdColonyNativeAdView( activity:Activity, zone_id:String, width:int )`](API-Details#wiki-adcolonynativeadview-activity-activity-string-zone_id-int-width-)<br>
 ####Interacting With an AdColonyNativeAdView Object####
 [`isReady() : boolean`](API-Details#isready-1)<br>
+[`prepareForListView()`](API-Details#prepareforlistview)<br>
 [`getNativeAdWidth() : int`](API-Details#wiki-getnativeadwidth)<br>
 [`getNativeAdHeight() : int`](API-Details#wiki-getnativeadheight)<br>
 [`setOverlayButtonColor( color:int )`](API-Details#wiki-setoverlaybuttoncolor-int-color-)<br>
@@ -397,6 +398,13 @@ The value that this method returns may not be valid if a successful ad config ha
 Returns true if the ad you've created is prepared for playback and metadata queries. If false, you should call [destroy()](API-Details#wiki-destroy) and abort the construction of your ad unit.
 ```java
 public boolean isReady()
+```
+
+---
+####prepareForListView()####
+Call this method directly after creating your AdColonyNativeAdView object if you will be adding your ad placement into a ListView.
+```java
+public void prepareForListView()
 ```
 
 ---
