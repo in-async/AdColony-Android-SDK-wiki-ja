@@ -423,7 +423,7 @@ public void setOverlayButtonColor( int color )
 * *color*
   * The color that you wish to set the button to.*
 
-**Discussion**
+**Discussion**<br>
 The overlay button color is gray by default.
 
 ---
@@ -437,7 +437,7 @@ public void setOverlayButtonTextColor( int color )
 * *color*
   * The color that you wish to set the button text to.*
 
-**Discussion**
+**Discussion**<br>
 The overlay button text color is black by default.
 
 ---
