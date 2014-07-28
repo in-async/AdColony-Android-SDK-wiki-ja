@@ -1,10 +1,10 @@
-AdColony Instant-FeedTM is a new ad unit that allows you to blend AdColony ads directly into your app’s content, closely matching the form and function of your existing user experience. Prior to Instant-FeedTM, all AdColony ads were displayed as full-screen interstitials. 
+AdColony Instant-Feed™ is a new ad unit that allows you to blend AdColony ads directly into your app’s content, closely matching the form and function of your existing user experience. Prior to Instant-Feed™, all AdColony ads were displayed as full-screen interstitials. 
 
-Instant-FeedTM ads consist of two experiences: the first is the native experience where the AdColony SDK provides text, images, and a native video container that you use to construct your customized native ad experience. The second is triggered if a user taps on the video container, at which point the AdColony SDK will display a full-screen interstitial experience automatically.
+Instant-Feed™ ads consist of two experiences: the first is the native experience where the AdColony SDK provides text, images, and a native video container that you use to construct your customized native ad experience. The second is triggered if a user taps on the video container, at which point the AdColony SDK will display a full-screen interstitial experience automatically.
 
 
 ###Instructions###
-Once you've performed the required [[Project Setup]], you can display an AdColony Instant-FeedTM ad in your app by following these steps:
+Once you've performed the required [[Project Setup]], you can display an AdColony Instant-Feed™ ad in your app by following these steps:
 ####Step 1: Configure AdColony####
 First, make sure you have imported the AdColony library:
 ```java
@@ -36,7 +36,7 @@ public void onResume()
 
 ===
 ####Step 3: Create AdColonyNativeAdView Object####
-To show an AdColony Instant-FeedTM advertisement, create an AdColonyNativeAdView object:
+To show an AdColony Instant-Feed™ advertisement, first create an AdColonyNativeAdView object like so:
 ```java
 AdColonyNativeAdView ad = new AdColonyNativeAdView(activity, zone_id, width);
 if (ad.isReady())
