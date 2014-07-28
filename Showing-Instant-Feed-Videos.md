@@ -36,7 +36,7 @@ public void onResume()
 
 ===
 ####Step 3: Create AdColonyNativeAdView Object####
-To show an AdColony Instant-Feed™ advertisement, first create an AdColonyNativeAdView object like so:
+Next you'll need to request an AdColonyNativeAdView object and create it's placement in your application's layout. For best performance, the following steps should not take place on the UI thread (AsyncTasks are great for this.)
 ```java
 AdColonyNativeAdView ad = new AdColonyNativeAdView(activity, zone_id, width);
 if (ad.isReady())
@@ -59,10 +59,10 @@ ad.getDescription(); //Optional
 
 ===
 ####Step 5: Include a Sponsored Content Indicator####
-Ensure that your ad placement includes some text (and an optional image) indicating that the content is paid/sponsored by the advertiser. A simple example of this can be seen in the provided demo application.<br><br>
+Ensure that your ad placement includes some text (and an optional image) indicating that the content is paid/sponsored by the advertiser. A simple example of this can be seen in the provided demo application.
 
 ===
 ####Step 6: Insert Ad Unit Into Your Layout####
-When you have completed the construction of your ad unit, add it to your layout and it will begin playback once it is rendered on screen.
+When you have completed the construction of your ad unit, add it to your layout and it will begin playback once it is rendered on screen.<br><br>
 
 **Note:** this is a minimal example, please make note of the [[API Details]] and the demo project included in the distribution for more advanced usage.
