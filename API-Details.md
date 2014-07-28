@@ -386,7 +386,7 @@ The value that this method returns may not be valid if a successful ad config ha
 [`getAdvertiserName() : String`](API-Details#wiki-getadvertisername)<br>
 [`getTitle() : String`](API-Details#wiki-gettitle)<br>
 [`getDescription() : String`](API-Details#wiki-getdescription)<br>
-[`pause()`](API-Details#wiki-pause)<br>
+[`pause()`](API-Details#wiki-pause-1)<br>
 [`resume()`](API-Details#wiki-resume)<br>
 [`destroy()`](API-Details#wiki-destroy)<br>
 [`withListener( listener:AdColonyNativeAdListener ) : AdColonyNativeAdView`](API-Details#wiki-withlistener-adcolonynativeadlistener-listener-)<br>
