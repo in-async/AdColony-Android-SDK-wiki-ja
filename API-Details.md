@@ -451,7 +451,7 @@ public void setOverlayButtonTypeface( Typeface tf, int style )
 * *tf*
   * The Typeface object that you wish to set for the overlay button.
 * *style*
-  * The style as indicated by the (textStyle attribute)[http://developer.android.com/reference/android/widget/TextView.html#attr_android:textStyle]
+  * The style as indicated by the [textStyle attribute](http://developer.android.com/reference/android/widget/TextView.html#attr_android:textStyle)
 
 ---
 ###AdColonyAdListener Interface Reference###
