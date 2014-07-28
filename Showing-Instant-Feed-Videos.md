@@ -36,7 +36,7 @@ public void onResume()
 
 ===
 ####Step 3: Create AdColonyNativeAdView Object####
-Next you'll need to request an AdColonyNativeAdView object and create it's placement in your application's layout. For best performance, the following steps should not take place on the UI thread (AsyncTasks are great for this.)
+Next you'll need to request an AdColonyNativeAdView object and create it's placement in your application's layout. **For best performance, the following steps should not take place on the UI thread (AsyncTasks are great for this.)**
 ```java
 AdColonyNativeAdView ad = new AdColonyNativeAdView(activity, zone_id, width);
 if (ad.isReady())
