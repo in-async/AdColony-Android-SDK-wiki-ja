@@ -421,7 +421,7 @@ public void setOverlayButtonColor( int color )
 ```
 **Parameters**
 * *color*
-  * The color that you wish to set the button to.*
+  * The color that you wish to set the button to.
 
 **Discussion**<br>
 The overlay button color is gray by default.
@@ -435,7 +435,7 @@ public void setOverlayButtonTextColor( int color )
 
 **Parameters**
 * *color*
-  * The color that you wish to set the button text to.*
+  * The color that you wish to set the button text to.
 
 **Discussion**<br>
 The overlay button text color is black by default.
