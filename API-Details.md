@@ -372,10 +372,25 @@ The value that this method returns may not be valid if a successful ad config ha
 
 ###AdColonyNativeAdView Class Reference###
 ####Creating an AdColonyNativeAdView Object####
-[`AdColonyNativeAdView( activity:Activity, zone_id:String, width:int )`](API-Details#wiki-adcolonynativeadview-activity-activity-string-zone_id-int-width)<br>
+[`AdColonyNativeAdView( activity:Activity, zone_id:String, width:int )`](API-Details#wiki-adcolonynativeadview-activity-activity-string-zone_id-int-width-)<br>
 ####Interacting With an AdColonyNativeAdView Object####
-[`withListener( listener:AdColonyNativeAdListener ) : AdColonyNativeAdView`](API-Details#wiki-withlistener-adcolonynativeadlistener-listener-)<br>
 [`isReady() : boolean`](API-Details#wiki-isready)<br>
+[`getNativeAdWidth() : int`](API-Details#wiki-getnativeadwidth)<br>
+[`getNativeAdHeight() : int`](API-Details#wiki-getnativeadheight)<br>
+[`setOverlayButtonColor( color:int )`](API-Details#wiki-setoverlaybuttoncolor-int-color)-<br>
+[`setOverlayButtonTextColor( color:int )`](API-Details#wiki-setoverlaybuttontextcolor-int-color-)<br>
+[`setOverlayButtonTypeface( tf:Typeface, style:int )`](API-Details#wiki-setoverlaybuttontypeface-typeface-tf-int-style-)<br>
+[`setMuted( muted:boolean )`](API-Details#wiki-setmuted-boolean-muted-)<br>
+[`setVolume( volume:float )`](API-Details#wiki-setvolume-float-volume-)<br>
+[`getAdvertiserImage() : ImageView`](API-Details#wiki-getadvertiserimage)<br>
+[`getAdvertiserName() : String`](API-Details#wiki-getadvertisername)<br>
+[`getTitle() : String`](API-Details#wiki-gettitle)<br>
+[`getDescription() : String`](API-Details#wiki-getdescription)<br>
+[`pause()`](API-Details#wiki-pause)<br>
+[`resume()`](API-Details#wiki-resume)<br>
+[`destroy()`](API-Details#wiki-destroy)<br>
+[`withListener( listener:AdColonyNativeAdListener ) : AdColonyNativeAdView`](API-Details#wiki-withlistener-adcolonynativeadlistener-listener-)<br>
+[`withMutedListener( listener:AdColonyNativeAdMutedListener ) : AdColonyNativeAdView`](API-Details#wiki-withmutedlistener-adcolonynativeadmutedlistener-listener-)
 
 ###AdColonyAdListener Interface Reference###
 ####Implement the Following####
