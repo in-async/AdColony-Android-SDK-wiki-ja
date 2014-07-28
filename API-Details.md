@@ -371,8 +371,11 @@ The value that this method returns may not be valid if a successful ad config ha
 
 
 ###AdColonyNativeAdView Class Reference###
-
-
+####Creating an AdColonyNativeAdView Object####
+[`AdColonyNativeAdView( activity:Activity, zone_id:String, width:int )`](API-Details#wiki-adcolonynativeadview-activity-activity-string-zone_id-int-width)<br>
+####Interacting With an AdColonyNativeAdView Object####
+[`withListener( listener:AdColonyNativeAdListener ) : AdColonyNativeAdView`](API-Details#wiki-withlistener-adcolonynativeadlistener-listener-)<br>
+[`isReady() : boolean`](API-Details#wiki-isready)<br>
 
 ###AdColonyAdListener Interface Reference###
 ####Implement the Following####
