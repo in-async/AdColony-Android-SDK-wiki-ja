@@ -477,23 +477,87 @@ public void setVolume( float volume )
 
 ---
 ####getAdvertiserImage()####
-Returns an ImageView set by the advertiser to be incorporated into your ad placement.
+Returns an ImageView set by the advertiser to be optionally incorporated into your ad placement.
 ```java
 public ImageView getAdvertiserImage()
 ```
 
 ---
 ####getAdvertiserName()####
-Returns the name of the advertiser for use within your ad placement.
+Returns the name of the advertiser for required use within your ad placement.
 ```java
 public String getAdvertiserName()
 ```
 
-**Discussion**
+**Discussion**<br>
 It is required to incorporate the name of the advertiser into your ad placement.
 
 ---
 ####getTitle()####
+Returns the title of the advertisement for optional use within your ad placement.
+```java
+public String getTitle()
+```
+
+---
+####getDescription()####
+Returns the description of the advertisement for optional use within your ad placement.
+```java
+public String getDescription()
+```
+
+---
+####pause()####
+An optional method that will force the ad unit to pause.
+```java
+public void pause()
+```
+
+**Discussion**<br>
+It is not suggested to use this method unless absolutely necessary. Ads will automatically pause and resume without the use of these methods. Ads paused in this manner will not auto-resume and must be resumed via [resume()](API-Details#wiki-resume).
+
+---
+####resume()####
+An optional method that will under appropriate circumstances force the ad unit to resume.
+```java
+public void resume()
+```
+
+**Discussion**<br>
+It is not suggested to use this method unless absolutely necessary. Ads will automatically pause and resume without the use of these methods. This method will only resume an ad that has been previously [paused](API-Details#wiki-pause) and is currently visible within your layout.
+
+---
+####destroy()####
+This method should be called when permanently removing the ad unit from your layout.
+```java
+public void destroy()
+```
+
+**Discussion**
+It is necessary to call this method as it alerts us to internally remove all references to this object. Without proper use the memory used by the ad unit will never be completely freed.
+
+---
+####withListener( AdColonyNativeAdListener listener )####
+Registers an [AdColonyNativeAdListener] to alert you with start/finish callbacks.
+```java
+withListener( AdColonyNativeAdListener listener )
+```
+
+**Parameters**
+* *listener*
+  * The AdColonyNativeAdListener object that you wish to register.
+
+---
+####withMutedListener( AdColonyNativeAdMutedListener listener )####
+Registers an [AdColonyNativeAdMutedListener] to alert you with mute/un-mute callbacks.
+```java
+withMutedListener( AdColonyNativeAdMutedListener listener )
+```
+
+**Parameters**
+* *listener*
+  * The AdColonyNativeAdMutedListener object that you wish to register.
+
 
 ###AdColonyAdListener Interface Reference###
 ####Implement the Following####
