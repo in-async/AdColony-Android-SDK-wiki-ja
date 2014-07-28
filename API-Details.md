@@ -394,7 +394,7 @@ The value that this method returns may not be valid if a successful ad config ha
 
 ###Methods###
 ####isReady()####
-Returns true if a video advertisement is ready to be played, or false otherwise.
+Returns true if the ad you've created is prepared for playback and metadata queries. If false, you should call [destroy()](API-Details#wiki-destroy) and abort the construction of your ad unit.
 ```java
 public boolean isReady()
 ```
