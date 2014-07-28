@@ -2,7 +2,7 @@ AdColony Instant-Feed™ is a new ad unit that allows you to blend AdColony ads 
 
 Instant-Feed™ ads consist of two experiences: the first is the native experience where the AdColony SDK provides text, images, and a native video container that you use to construct your customized native ad experience. The second is triggered if a user taps on the video container, at which point the AdColony SDK will display a full-screen interstitial experience automatically.
 
-[[assets/IFExample.png|alt=Instant-Feed Example|align="center"]]
+<img align="center" src="assets/IFExample.png" alt="Instant-Feed Example"/>
 
 **If you are interested in integrating Instant-Feed™ ads into your app, please contact us at support@adcolony.com.**
 
