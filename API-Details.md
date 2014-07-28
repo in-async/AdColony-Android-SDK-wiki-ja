@@ -5,8 +5,8 @@
 [AdColonyAdListener Interface Reference](API-Details#wiki-adcolonyadlistener-interface-reference)<br>
 [AdColonyV4VCListener Interface Reference](API-Details#wiki-adcolonyv4vclistener-interface-reference)<br>
 [AdColonyAdAvailabilityListener Interface Reference](API-Details#wiki-adcolonyadavailabilitylistener-interface-reference)<br>
-[AdColonyNativeAdListener Interface Reference]<br>
-[AdColonyNativeAdMutedListener Interface Reference]
+[AdColonyNativeAdListener Interface Reference](API-Details#adcolonynativeadlistener-interface-reference)<br>
+[AdColonyNativeAdMutedListener Interface Reference](API-Details#adcolonynativeadmutedlistener-interface-reference)
 
 ==     
 ###AdColony Class Reference###
