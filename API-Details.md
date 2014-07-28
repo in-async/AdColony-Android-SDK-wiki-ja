@@ -377,7 +377,7 @@ The value that this method returns may not be valid if a successful ad config ha
 [`isReady() : boolean`](API-Details#wiki-isready)<br>
 [`getNativeAdWidth() : int`](API-Details#wiki-getnativeadwidth)<br>
 [`getNativeAdHeight() : int`](API-Details#wiki-getnativeadheight)<br>
-[`setOverlayButtonColor( color:int )`](API-Details#wiki-setoverlaybuttoncolor-int-color)-<br>
+[`setOverlayButtonColor( color:int )`](API-Details#wiki-setoverlaybuttoncolor-int-color-)<br>
 [`setOverlayButtonTextColor( color:int )`](API-Details#wiki-setoverlaybuttontextcolor-int-color-)<br>
 [`setOverlayButtonTypeface( tf:Typeface, style:int )`](API-Details#wiki-setoverlaybuttontypeface-typeface-tf-int-style-)<br>
 [`setMuted( muted:boolean )`](API-Details#wiki-setmuted-boolean-muted-)<br>
@@ -392,6 +392,55 @@ The value that this method returns may not be valid if a successful ad config ha
 [`withListener( listener:AdColonyNativeAdListener ) : AdColonyNativeAdView`](API-Details#wiki-withlistener-adcolonynativeadlistener-listener-)<br>
 [`withMutedListener( listener:AdColonyNativeAdMutedListener ) : AdColonyNativeAdView`](API-Details#wiki-withmutedlistener-adcolonynativeadmutedlistener-listener-)
 
+###Methods###
+####isReady()####
+Returns true if a video advertisement is ready to be played, or false otherwise.
+```java
+public boolean isReady()
+```
+
+---
+####getNativeAdWidth()####
+Returns the width of the ad unit.
+```java
+public int getNativeAdWidth()
+```
+
+---
+####getNativeAdHeight()####
+Returns the height of the ad unit.
+```java
+public int getNativeAdHeight()
+```
+
+---
+####setOverlayButtonColor( int color )####
+Sets the button color of the overlay button which is enabled on certain campaigns.
+```java
+public void setOverlayButtonColor( int color )
+```
+**Parameters**
+* *color*
+  *The color that you wish to set the button to.*
+
+**Discussion**
+The overlay button color is gray by default.
+
+---
+####setOverlayButtonTextColor( int color )####
+Sets the button text color of the overlay button which is enabled on certain campaigns.
+```java
+public void setOverlayButtonTextColor( int color )
+```
+
+**Parameters**
+* *color*
+  *The color that you wish to set the button text to.*
+
+**Discussion**
+The overlay button text color is black by default.
+
+---
 ###AdColonyAdListener Interface Reference###
 ####Implement the Following####
 [`onAdColonyAdStarted( ad:AdColonyAd )`](API-Details#wiki-onadcolonyadstarted-adcolonyad-ad-)<br>
