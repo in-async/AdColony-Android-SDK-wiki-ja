@@ -454,6 +454,47 @@ public void setOverlayButtonTypeface( Typeface tf, int style )
   * The style as indicated by the [textStyle attribute](http://developer.android.com/reference/android/widget/TextView.html#attr_android:textStyle)
 
 ---
+####setMuted( boolean muted )####
+Used to programmatically mute or un-mute the volume of the ad unit.
+```java
+public void setMuted( boolean muted )
+```
+
+**Parameters**
+* *muted*
+  * A boolean representing whether you wish to mute or un-mute the volume of the ad unit.
+
+---
+####setVolume( float volume )####
+Used to programmatically set the volume of the ad unit.
+```java
+public void setVolume( float volume )
+```
+
+**Parameters**
+* *volume*
+  * A float between 0 (muted) and 1 (full volume) representing the desired volume of the ad unit.
+
+---
+####getAdvertiserImage()####
+Returns an ImageView set by the advertiser to be incorporated into your ad placement.
+```java
+public ImageView getAdvertiserImage()
+```
+
+---
+####getAdvertiserName()####
+Returns the name of the advertiser for use within your ad placement.
+```java
+public String getAdvertiserName()
+```
+
+**Discussion**
+It is required to incorporate the name of the advertiser into your ad placement.
+
+---
+####getTitle()####
+
 ###AdColonyAdListener Interface Reference###
 ####Implement the Following####
 [`onAdColonyAdStarted( ad:AdColonyAd )`](API-Details#wiki-onadcolonyadstarted-adcolonyad-ad-)<br>
