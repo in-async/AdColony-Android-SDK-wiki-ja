@@ -374,7 +374,7 @@ The value that this method returns may not be valid if a successful ad config ha
 ####Creating an AdColonyNativeAdView Object####
 [`AdColonyNativeAdView( activity:Activity, zone_id:String, width:int )`](API-Details#wiki-adcolonynativeadview-activity-activity-string-zone_id-int-width-)<br>
 ####Interacting With an AdColonyNativeAdView Object####
-[`isReady() : boolean`](API-Details#wiki-isready)<br>
+[`isReady() : boolean`](API-Details#isready-1)<br>
 [`getNativeAdWidth() : int`](API-Details#wiki-getnativeadwidth)<br>
 [`getNativeAdHeight() : int`](API-Details#wiki-getnativeadheight)<br>
 [`setOverlayButtonColor( color:int )`](API-Details#wiki-setoverlaybuttoncolor-int-color-)<br>
