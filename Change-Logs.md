@@ -1,6 +1,6 @@
 **2.1.0 - July 28, 2014**<br>
 1. New Instant-Feed™ ads available via the AdColonyNativeAdView API (See [[API Details]], [[Showing Instant-Feed™ Videos]], or our included demo projects for more details). If you are interested in integrating Instant-Feed™ ads into your app, please contact us at support@adcolony.com.<br>
-2. Google Advertising Id will only be collected if you've added Google Play Services into your project. Android Id will only be collected when the Google Advertising Id is not available.<br>
+2. Google Advertising Id will be collected as long as you've added Google Play Services into your project. Android Id will only be collected when the Google Advertising Id is not available.<br>
 3. Both "vc_decline" and "vc_noreward" are now valid responses for our server-side V4VC reward system.<br>
 4. General bug fixes.
 
