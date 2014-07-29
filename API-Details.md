@@ -706,6 +706,38 @@ You can see an example of this listener in use in our Demo applications included
 
 
 ###AdColonyNativeAdListener Interface Reference###
+####Implement the Following####
+[`onAdColonyNativeAdStarted( expanded:boolean, ad:AdColonyNativeAdView )`](API-Details#wiki-onadcolonynativeadstarted-boolean-expanded-adcolonynativeadview-ad-)<br>
+[`onAdColonyNativeAdFinished( expanded:boolean, ad:AdColonyNativeAdView )`](API-Details#wiki-onadcolonynativeadfinished-boolean-expanded-adcolonynativeadview-ad-)<br>
+###Methods###
+####onAdColonyNativeAdStarted( boolean expanded, AdColonyNativeAdView ad )####
+This method will be called when a native ad experience begins.
+```java
+public void onAdColonyNativeAdStarted( boolean expanded, AdColonyNativeAdView ad )
+```
+**Parameters**
+* *expanded*
+  * A boolean representing whether or not the native ad in question has been expanded (in fullscreen mode).
+* *ad*
+  * The AdColonyNativeAdView object that has started playing.
+
+**Discussion**<br>
+You can see an example of this listener in use in the AdColonyInstantFeedAdsDemo project included in the distribution.
+
+---
+####onAdColonyNativeAdFinished( boolean expanded, AdColonyNativeAdView ad )####
+This method will be called when a native ad video completes playback.
+```java
+public void onAdColonyNativeAdFinished( boolean expanded, AdColonyNativeAdView ad )
+```
+**Parameters**
+* *expanded*
+  * A boolean representing whether or not the native ad in question has been expanded (in fullscreen mode).
+* *ad*
+  * The AdColonyNativeAdView object that has started playing.
+
+**Discussion**<br>
+You can see an example of this listener in use in the AdColonyInstantFeedAdsDemo project included in the distribution.
 
 
 ###AdColonyNativeAdMutedListener Interface Reference###
