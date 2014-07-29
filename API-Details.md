@@ -742,7 +742,7 @@ You can see an example of this listener in use in the AdColonyInstantFeedAdsDemo
 
 ###AdColonyNativeAdMutedListener Interface Reference###
 ####Implement the Following####
-[`onAdColonyNativeAdMuted( ad:AdColonyNativeAdView, muted:boolean )`](API-Details#wiki-onadcolonynativeadmuted-adcolonynativeadview-ad-boolean-muted-)<br>
+[`onAdColonyNativeAdMuted( ad:AdColonyNativeAdView, muted:boolean )`](API-Details#onadcolonynativeadmuted-adcolonynativeadview-ad-boolean-muted-)<br>
 ###Methods###
 ####onAdColonyNativeAdMuted( AdColonyNativeAdView ad, boolean muted )####
 This method will be called when a user of your app mutes or un-mutes the native ad with the volume button located on the top right of the unit.
