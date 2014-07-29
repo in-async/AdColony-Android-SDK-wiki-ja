@@ -741,3 +741,19 @@ You can see an example of this listener in use in the AdColonyInstantFeedAdsDemo
 
 
 ###AdColonyNativeAdMutedListener Interface Reference###
+####Implement the Following####
+[`onAdColonyNativeAdMuted( ad:AdColonyNativeAdView, muted:boolean )`](API-Details#wiki-onadcolonynativeadmuted-adcolonynativeadview-ad-boolean-muted-)<br>
+###Methods###
+####onAdColonyNativeAdMuted( AdColonyNativeAdView ad, boolean muted )####
+This method will be called when a user of your app mutes or un-mutes the native ad with the volume button located on the top right of the unit.
+```java
+public void onAdColonyNativeAdMuted( AdColonyNativeAdView ad, boolean muted )
+```
+**Parameters**
+* *ad*
+  * The AdColonyNativeAdView object that has been muted or un-muted.
+* *muted*
+  * A boolean representing whether the native ad in question has been muted or un-muted.
+
+**Discussion**<br>
+You can see an example of this listener in use in the AdColonyInstantFeedAdsDemo project included in the distribution.
