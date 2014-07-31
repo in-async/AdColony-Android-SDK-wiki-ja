@@ -1,3 +1,7 @@
+**2.1.1 - July 31, 2014**<br>
+1. General bug fixes.
+
+===
 **2.1.0 - July 28, 2014**<br>
 1. New Instant-Feed™ ads available via the AdColonyNativeAdView API (See [[API Details]], [[Showing Instant-Feed™ Videos]], or our included demo projects for more details). If you are interested in integrating Instant-Feed™ ads into your app, please contact us at support@adcolony.com.<br>
 2. Google Advertising Id will be collected as long as you've added Google Play Services into your project. Android Id will only be collected when the Google Advertising Id is not available.<br>
