@@ -3,7 +3,7 @@ There are 3 quick steps that must be taken prior to integrating AdColony video a
 * Place adcolony.jar in your project’s "libs" folder.
   * The adcolony.jar library can be found in the distribution's "Library" folder.
 
-=== 
+===   
 ####Step 2: Edit Manifest####
 Ensure the following 3 permissions are set in your project's "AndroidManifest.xml":<br><br>
 1. INTERNET<br>
