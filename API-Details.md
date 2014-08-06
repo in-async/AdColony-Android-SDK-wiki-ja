@@ -26,7 +26,7 @@
 [`resume( activity:Activity )`](API-Details#wiki-resume-activity-activity-)<br>
 [`statusForZone( zone_id:String ) : String`](API-Details#wiki-statusforzone-string-zone_id-)<br>
 [`cancelVideo()`](API-Details#wiki-cancelvideo)<br>
-[`getRemainingV4VCForZone( zone_id:String ) : int`](API-Details#wiki-getremainingv4vcforzone-string-zone-id-)<br>
+[`getRemainingV4VCForZone( zone_id:String ) : int`](API-Details#getremainingv4vcforzone-string-zone_id-)<br>
 
 ###Class Methods###
 
@@ -197,7 +197,7 @@ A video cancelled using this method will not count as a completed video view.
 
 ---
 ####getRemainingV4VCForZone( String zone_id )####
-Returns the number of remaining possible V4VC video views for the given zone.
+Returns the number of remaining possible daily V4VC video views for the given zone.
 ``` java
 static public int getRemainingV4VCForZone( String zone_id )
 ```
