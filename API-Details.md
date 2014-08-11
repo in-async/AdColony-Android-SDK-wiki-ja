@@ -556,7 +556,7 @@ It is necessary to call this method as it alerts us to internally remove all ref
 ####withListener( AdColonyNativeAdListener listener )####
 Registers an [AdColonyNativeAdListener](API-Details#adcolonynativeadlistener-interface-reference) to alert you with start/finish callbacks.
 ```java
-withListener( AdColonyNativeAdListener listener )
+public void withListener( AdColonyNativeAdListener listener )
 ```
 
 **Parameters**
@@ -567,7 +567,7 @@ withListener( AdColonyNativeAdListener listener )
 ####withMutedListener( AdColonyNativeAdMutedListener listener )####
 Registers an [AdColonyNativeAdMutedListener](API-Details#adcolonynativeadmutedlistener-interface-reference) to alert you with mute/un-mute callbacks.
 ```java
-withMutedListener( AdColonyNativeAdMutedListener listener )
+public void withMutedListener( AdColonyNativeAdMutedListener listener )
 ```
 
 **Parameters**
