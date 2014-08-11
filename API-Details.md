@@ -549,7 +549,7 @@ This method should be called when permanently removing the ad unit from your lay
 public void destroy()
 ```
 
-**Discussion**
+**Discussion**<br>
 It is necessary to call this method as it alerts us to internally remove all references to this object. Without proper use the memory used by the ad unit will never be completely freed.
 
 ---
