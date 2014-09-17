@@ -68,7 +68,7 @@ Ensure that your ad placement includes some text (and an optional image) indicat
 
 ===
 ####Step 6: Insert Ad Unit Into Your Layout####
-When you have completed the construction of your ad unit, add it to your layout and it will begin playback once it is rendered on screen.
+When you have completed the construction of your ad unit, add it to your layout and it will begin playback once it is rendered on screen. Please note that AdColonyNativeAdView objects can only be used in a hardware accelerated window.
 
 ===
 ####Step 7: Removing the Ad Unit####
