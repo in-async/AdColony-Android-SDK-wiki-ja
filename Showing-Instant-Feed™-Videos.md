@@ -1,8 +1,8 @@
 **If you are interested in integrating Instant-Feed™ ads into your app, please contact us at support@adcolony.com.**
 
-**In order to comply with contractual requirements regarding implementation and valid impressions, we require the following from Publishers:**
-**1. The video player must be in a viewable area and nothing should be covering it.**
-**2. Ads will automatically start/pause/resume in accordance with contractual requirements. No unauthorized tactics may be used to alter this behavior<br>**
+**In order to comply with contractual requirements regarding implementation and valid impressions, we require the following from Publishers:<br>**
+**1. The video player must be in a viewable area and nothing should be covering it.<br>**
+**2. Ads will automatically start/pause/resume in accordance with contractual requirements. No unauthorized tactics may be used to alter this behavior<br><br>**
 
 **Note: For those also developing for iOS, you must manage start/resume and pause behavior in your implementation on that platform.**
 
