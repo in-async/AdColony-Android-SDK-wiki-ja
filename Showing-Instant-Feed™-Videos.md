@@ -1,10 +1,12 @@
-**If you are interested in integrating Instant-Feed™ ads into your app, please contact us at support@adcolony.com.**
+###Notes###
+If you are interested in integrating Instant-Feed™ ads into your app, please contact us at support@adcolony.com.
 
-**In order to comply with contractual requirements regarding implementation and valid impressions, we require the following from Publishers:<br><br>**
-**1. The video player must be in a viewable area and nothing should be covering it.<br>**
-**2. Ads will automatically start/pause/resume in accordance with contractual requirements. No unauthorized tactics may be used to alter this behavior.<br><br>**
-**Note: For those also developing for iOS, you must manage start/resume and pause behavior in your implementation on that platform.**
+In order to comply with contractual requirements regarding implementation and valid impressions, we require the following from Publishers:<br><br>
+1. The video player must be in a viewable area and nothing should be covering it.<br>
+2. Ads will automatically start/pause/resume in accordance with contractual requirements. No unauthorized tactics may be used to alter this behavior.<br><br>
+For those also developing for iOS, you must manage start/resume and pause behavior in your implementation on that platform.
 
+###Overview###
 AdColony Instant-Feed™ is a new ad unit that allows you to blend AdColony ads directly into your app’s content, closely matching the form and function of your existing user experience. Prior to Instant-Feed™, all AdColony ads were displayed as full-screen interstitials. 
 
 Instant-Feed™ ads consist of two experiences: the first is the native experience where the AdColony SDK provides text, images, and a native video container that you use to construct your customized native ad experience. The second is triggered if a user taps on the video container, at which point the AdColony SDK will display a full-screen interstitial experience automatically.
