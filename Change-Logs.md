@@ -1,3 +1,7 @@
+**2.1.2 - September 25, 2014**<br>
+1. Fixed an issue with our SSL implementation.
+
+===
 **2.1.1 - July 31, 2014**<br>
 1. General bug fixes.
 
