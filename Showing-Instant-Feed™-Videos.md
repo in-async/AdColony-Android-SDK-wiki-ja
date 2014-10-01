@@ -56,6 +56,20 @@ if (ad.isReady())
 }
 ```
 
+In a ListView environment, it is also suggested to call notifyAddedToListView() in your adapter's getView() method as appropriate. Example below:
+
+```java
+@Override
+public View getView(int position, View view, ViewGroup parent)
+{
+  ...
+  layout.addView(native_ad);
+  native_ad.notifyAddedToListView();
+  ...
+  return your_view;
+}
+```
+
 Where activity is your Activity reference, zone_id is a String matching a specific zone gathered from the dashboard and included in your configure call, and width is the integer width of the ad unit desired. If the ad is ready you can begin construction of your placement.
 
 ===
