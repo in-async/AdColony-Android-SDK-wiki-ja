@@ -57,19 +57,6 @@ if (ad.isReady())
 ```
 Where activity is your Activity reference, zone_id is a String matching a specific zone gathered from the dashboard and included in your configure call, and width is the integer width of the ad unit desired. If the ad is ready you can begin construction of your placement.
 
-In a ListView environment, it is also suggested to call notifyAddedToListView() in your adapter's getView() method as appropriate. Example below:
-
-```java
-@Override
-public View getView(int position, View view, ViewGroup parent)
-{
-  ...
-  layout.addView(native_ad);
-  native_ad.notifyAddedToListView();
-  ...
-  return your_view;
-}
-```
 ===
 ####Step 4: Retrieve More Information to Include in Your Placement####
 Use the public API to retrieve more information to complete your ad placement:
@@ -87,6 +74,20 @@ Ensure that your ad placement includes some text (and an optional image) indicat
 ===
 ####Step 6: Insert Ad Unit Into Your Layout####
 When you have completed the construction of your ad unit, add it to your layout and it will begin playback once it is rendered on screen. Please note that AdColonyNativeAdView objects can only be used in a hardware accelerated window.
+
+In a ListView environment, it is also suggested to call notifyAddedToListView() in your adapter's getView() method as appropriate. Example below:
+
+```java
+@Override
+public View getView(int position, View view, ViewGroup parent)
+{
+  ...
+  layout.addView(native_ad);
+  native_ad.notifyAddedToListView();
+  ...
+  return your_view;
+}
+```
 
 ===
 ####Step 7: Removing the Ad Unit####
