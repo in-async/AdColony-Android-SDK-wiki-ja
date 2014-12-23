@@ -1,7 +1,8 @@
 There are 3 quick steps that must be taken prior to integrating AdColony video ads into your source code:
 ####Step 1: Insert Library####
 * Place adcolony.jar in your project’s "libs" folder.
-  * The adcolony.jar library can be found in the distribution's "Library" folder.
+* Place the armeabi folder into your project's "libs" folder.
+  * Both the adcolony.jar library and armeabi folder can be found in the distribution's "Library" folder.
 
 ===   
 ####Step 2: Edit Manifest####
@@ -9,12 +10,14 @@ Ensure the following 3 permissions are set in your project's "AndroidManifest.xm
 1. INTERNET<br>
 2. WRITE_EXTERNAL_STORAGE<br>
 3. ACCESS_NETWORK_STATE<br>
+4. VIBRATE<br>
 
 You can do this by pasting the following lines before the \<application...> tag:
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+<uses-permission android:name="android.permission.VIBRATE" />
 ```
 In order for our Dynamic End Cards to perform optimally, please enable hardware acceleration by adding the following line to your application tag in your manifest:<br>
 ```xml
