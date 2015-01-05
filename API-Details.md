@@ -27,6 +27,7 @@
 [`statusForZone( zone_id:String ) : String`](API-Details#wiki-statusforzone-string-zone_id-)<br>
 [`cancelVideo()`](API-Details#wiki-cancelvideo)<br>
 [`getRemainingV4VCForZone( zone_id:String ) : int`](API-Details#getremainingv4vcforzone-string-zone_id-)<br>
+[`notifyIAPComplete( product_id:String, trans_id:String, currency_code:String, price:double )`](API-Details#wiki-notifyiapcomplete-string-product_id-string-trans_id-string-currency_code-double-price-)<br>
 
 ###Class Methods###
 
