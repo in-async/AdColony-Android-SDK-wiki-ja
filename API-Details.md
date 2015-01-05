@@ -205,6 +205,12 @@ static public int getRemainingV4VCForZone( String zone_id )
 **Discussion**<br>
 The value returned by this method represents the remaining possible V4VC video views for a specific zone and does not necessarily mean that any ads are currently available.
 
+---
+####notifyIAPComplete( String product_id, String trans_id, String currency_code, double price )####
+Use this method to notify AdColony of a successfully completed in app purchase event.
+
+**Discussion**<br>
+The currency code and price are optional - a second method exists with a signature including only the product id and transaction id.
 
 ###AdColonyVideoAd Class Reference###
 **Note:**
