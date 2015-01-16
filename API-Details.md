@@ -667,7 +667,7 @@ public boolean iapEnabled()
 ```
 
 ---
-####iapEngagementType####
+####iapEngagementType()####
 Returns the type of engagement that occurred during an In-App Purchase Promo ad.
 ```java
 public AdColonyIAPEngagement iapEngagementType()
@@ -683,7 +683,7 @@ public AdColonyIAPEngagement iapEngagementType()
   * An IAP ad has played, but there was no user interaction.
 
 ---
-####iapProductID####
+####iapProductID()####
 Returns the product id associated with the In-App Purchase Promo ad that was shown.
 ```java
 public String iapProductID()
