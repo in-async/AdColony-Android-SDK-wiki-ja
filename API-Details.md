@@ -591,7 +591,10 @@ public void withMutedListener( AdColonyNativeAdMutedListener listener )
 [`notShown() : boolean`](API-Details#wiki-notshown)<br>
 [`canceled() : boolean`](API-Details#wiki-canceled)<br>
 [`noFill() : boolean`](API-Details#wiki-nofill)<br>
-[`skipped() : boolean`](API-Details#wiki-skipped)
+[`skipped() : boolean`](API-Details#wiki-skipped)<br>
+[`iapEnabled() : boolean`](API-Details#wiki-iapenabled)<br>
+[`iapEngagementType() : AdColonyIAPEngagement`](API-Details#wiki-iapengagementtype)<br>
+[`iapProductID() : String`](API-Details#wiki-iapproductid)
 
 ###Methods###
 ####onAdColonyAdStarted( AdColonyAd ad )####
@@ -656,6 +659,35 @@ When invoked on the AdColonyAd object returned from [onAdColonyAdAttemptFinished
 public boolean skipped()
 ```
 
+---
+####iapEnabled()####
+Will return true if the ad attempted was an In-App Purchase Promo ad.
+```java
+public boolean iapEnabled()
+```
+
+---
+####iapEngagementType####
+Returns the type of engagement that occurred during an In-App Purchase Promo ad.
+```java
+public AdColonyIAPEngagement iapEngagementType()
+```
+**Possible return values**   
+* *AdColonyIAPEngagement.NONE*  
+  * Not an IAP ad, or the ad has not been shown yet.
+* *AdColonyIAPEngagement.OVERLAY*
+  * The In-Video Engagement Overlay was triggered.
+* *AdColonyIAPEngagement.END_CARD*
+  * An IAP request occurred on the end card.
+* *AdColonyIAPEngagement.AUTOMATIC*
+  * An IAP ad has played, but there was no user interaction.
+
+---
+####iapProductID####
+Returns the product id associated with the In-App Purchase Promo ad that was shown.
+```java
+public String iapProductID()
+```
 
 
 ###AdColonyV4VCListener Interface Reference###
