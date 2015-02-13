@@ -1,3 +1,8 @@
+**2.2.1 - February 10, 2014**<br>
+1. AdColonyNativeAdView objects now can be created with an arbitrary width and height.
+2. Minor bug fixes and stability improvements.
+
+===
 **2.2.0 - December 19, 2014**<br>
 1. Added support for haptic-enhanced videos. You should include the "armeabi" folder in your project's "libs" folder and also include the VIBRATE permission in your AndroidManifest.xml to allow haptic-enabled videos.<br>
 2. Added support for IAP Promo Ads.<br>
